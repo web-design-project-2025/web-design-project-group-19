@@ -45,17 +45,14 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
+/* Hover effect */
+
 .nav-item:hover {
   box-shadow: 0 0 10px #ffe4c4;
 }
 
 /* Mobile Menu Drop mENù */
 .menu-droptoggle {
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  display: none;
-  color: #3f0028;
   display: none;
 }
 
@@ -71,6 +68,11 @@ body {
   .menu-droptoggle {
     display: block;
     cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    display: none;
+    color: #3f0028;
   }
 
   .nav-boxes.active {
