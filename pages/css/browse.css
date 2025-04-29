@@ -1,4 +1,4 @@
-.movie-grid {
+.media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
@@ -31,6 +31,6 @@
   }
 }
 
-.movie-card {
+.media-card {
   animation: fadeIn 0.5s ease-out;
 }
