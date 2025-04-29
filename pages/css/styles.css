@@ -68,13 +68,13 @@ body {
     margin-top: 1rem;
   }
 
-  .nav-boxes.active {
-    display: flex;
-  }
-
   .menu-droptoggle {
     display: block;
     cursor: pointer;
+  }
+
+  .nav-boxes.active {
+    display: flex;
   }
 
   .site-header {
