@@ -56,6 +56,7 @@ body {
   font-size: 1.8rem;
   display: none;
   color: #3f0028;
+  display: none;
 }
 
 /* Responsive for moblie screens*/
@@ -73,6 +74,7 @@ body {
 
   .menu-droptoggle {
     display: block;
+    cursor: pointer;
   }
 
   .site-header {
