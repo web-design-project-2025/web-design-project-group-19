@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage-Welcome!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pages/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo-container">
+        <img src="/pages/assets/logo.png" alt="Logo" />
+      </div>
+
+      <!-- navigation bars at the top -->
+      <nav class="nav-boxes">
+        <a href="/pages/html/user-profile.html">
+          <button class="nav-item">My Profile</button>
+        </a>
+        <a href="/pages/html/browse.html">
+          <button class="nav-item">Browse</button>
+        </a>
+
+        <button class="nav-item">Search</button>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <main></main>
+
+    <!-- for mobile functionality -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-boxes");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
