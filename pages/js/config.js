@@ -1,12 +1,11 @@
 // TMDB API Configuration
-
 const TMDB_API = {
   API_KEY: "",
 
   // Base URL for all API requests
   BASE_URL: "https://api.themoviedb.org/3",
 
-  // Base URL for movie images
+  // Base URL for all images
   IMAGE_BASE_URL: "https://image.tmdb.org/t/p",
 
   // Default parameters for API requests

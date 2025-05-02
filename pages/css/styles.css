@@ -20,7 +20,7 @@ body {
 
 /* Logo */
 .logo-container {
-  flex: 1;
+  flex: wrap;
 }
 .logo {
   height: 40px;
