@@ -1,4 +1,4 @@
-import TMDB_API from "/pages/js/config";
+import TMDB_API from "./config.js";
 
 //function for API requests
 async function makeRequest(endpoint, params = {}) {
