@@ -1,15 +1,24 @@
-
-
+.kermit {
+  width: 100px;
+  padding-top: 100px;
+  margin-left: 150px;
+  padding: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 .favorite-films {
-    width: 332px; 
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px; 
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 .favorite-films-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-    gap: 20px;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  padding: 30px;
+  margin-top: 100px;
 }
