@@ -1,3 +1,4 @@
+import API_CONFIG from "./api-key";
 import TMDB_API from "./config.js";
 
 //function for API requests
