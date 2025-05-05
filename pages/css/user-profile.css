@@ -1,1 +1,15 @@
-/* profile picture*/
+
+
+.favorite-films {
+    width: 332px; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+.favorite-films-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;      
+}
