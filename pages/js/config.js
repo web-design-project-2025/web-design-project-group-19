@@ -5,7 +5,7 @@ import API_CONFIG from "./api-key";
 const TMDB_API = {
 
 // Image size configurations - let's check how much we use the different sizes or if they need to be changed
-TMDB_API.IMAGE_SIZES = {
+TMDB_IMAGE_SIZE : {
   poster: {
     small: "/w185",
     medium: "/w342",
@@ -21,7 +21,8 @@ TMDB_API.IMAGE_SIZES = {
     medium: "/w185",
     large: "/h632",
   },
-};
+},
+}
 
 // Export the configuration
 export default TMDB_API;
