@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEENIT?</title>
-    <style>
-      
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/pages/css/styles.css" />
+    <link rel="stylesheet" href="/pages/css/browse.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo-container">
+        <img src="/pages/assets/weblogo.jpg" alt="Logo" class="logo" />
+      </div>
+      <nav class="nav-boxes">
+        <button class="nav-item">My Profile</button>
+        <button class="nav-item">Browse</button>
+        <button class="nav-item">Search</button>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <main lass="browse-container">
+      <h1>Browse Popular Content</h1>
+
+      <div class="media-tabs">
+        <button class="media-tab active" data-type="movie">Movies</button>
+        <button class="media-tab" data-type="tv">TV Shows</button>
+        <button class="media-tab" data-type="person">Cast</button>
+      </div>
+
+      <div class="media-grid" id="media-grid"></div>
+
+      <div class="pagination">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-info">Page 1 of 10</span>
+        <button id="next-page">Next</button>
+      </div>
+    </main>
+
+    <!-- for mobile functionality -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-boxes");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+    <script src="/pages/js/browse.js" type="module"></script>
+  </body>
+</html>

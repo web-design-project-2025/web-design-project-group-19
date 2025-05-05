@@ -1,0 +1,93 @@
+/* Basic style */
+body {
+  margin: 0;
+  background-color: #3f0028;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ddae78;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Logo */
+.logo-container {
+  flex: wrap;
+}
+.logo {
+  height: 40px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Navigation Boxes */
+.nav-boxes {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-item {
+  background-color: #fffbdd;
+  color: #3f0028;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+
+.nav-item:hover {
+  box-shadow: 0 0 10px #ffe4c4;
+}
+
+/* Mobile Menu Drop mENù */
+.menu-droptoggle {
+  display: none;
+}
+
+/* Responsive for moblie screens*/
+@media (max-width: 768px) {
+  .nav-boxes {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .menu-droptoggle {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    display: none;
+    color: #3f0028;
+  }
+
+  .nav-boxes.active {
+    display: flex;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
