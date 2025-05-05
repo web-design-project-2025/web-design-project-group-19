@@ -52,7 +52,7 @@ body {
 }
 
 /* Mobile Menu Drop mENù */
-.menu-droptoggle {
+.menu-toggle {
   display: none;
 }
 
@@ -67,12 +67,11 @@ body {
 
   .menu-droptoggle {
     display: block;
-    cursor: pointer;
     background: none;
     border: none;
     font-size: 1.8rem;
-    display: none;
     color: #3f0028;
+    cursor: pointer;
   }
 
   .nav-boxes.active {
