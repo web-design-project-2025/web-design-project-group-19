@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #ddae78;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   flex-wrap: wrap;
   position: relative;
 }
