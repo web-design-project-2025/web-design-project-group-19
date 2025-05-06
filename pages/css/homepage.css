@@ -1,18 +1,20 @@
-/* Basics*/
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    color: #3f0028
+    background-color: #3f0028;
+    margin: 0;
+    font-family: "Monteserrat", sans-serif;
 }
 
-
-/* Header section*/
 .site-header {
+    background-color: #3f0028;
+    padding: 1rem;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
-    border-bottom: 2px solid #ddae78;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .nav-boxes {
@@ -21,143 +23,115 @@ body {
 }
 
 .nav-item {
-    background-color: #ddae78;
-    color: #3f0028;
-    border: none;
-    border-radius: 8px;
-    padding: 0.6rem 1.2rem;
-    font-weight: bold;
+    background-color: transparent;
+    color:white;
+    border: 1px solid white; 
+    padding: 0.5rem 1rem;
+    border-radius:4px;
     cursor: pointer;
-    transition: background-color 0.3 ease;
 }
 
 .nav-item:hover {
-    background-color: #f3b300;
+    background-color: white;
+    color: #3f0028;
 }
 
-.menu-toggle {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    display: none;
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #3f0028;
+    padding-bottom: 2rem;
 }
 
-/* Hero section*/
 .hero-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
+    background-image: url("/pages/homepage-img/alpacino.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
 }
 
 .hero-text {
-    background-color:#3f0028;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-.hero-text h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    padding: 2rem;
 }
 
 .hero-text p {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    margin:1rem 0;
+}
+
+.cta-button {
+    font-size: 0.9rem;
+    background-color: #ffda4f;
+    color: #3f0028;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;¨
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #ddae78;
+    background-color: #e6c23c;
 }
 
-/* Trending Sections*/
-.section {
+section.trending {
     background-color: #3f0028;
-    color: white;
     padding: 2rem 1rem;
     text-align: center;
 }
 
-.section h3 {
-    font-size: 1.5rem;
+.trending h3 {
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
-
-/* Scrolling Images*/
-.slider {
+.trending-items {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
     overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem;
-    scroll-behavior: smooth;
+    padding-left: 1rem;
+    margin-left: 0;
 }
 
-.slider img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
+.trending img {
+    width: 120px;
+    border-radius: 6px;
 }
 
-.slider img:hover {
-    transform: scale(1.05);
-}
-
-.arrow-btn {
-    background-color: #f3b300;
+.arrow {
+    background-color: #ffda4f;
     color: #3f0028;
     border: none;
-    font-size: 1.5rem;
-    border-radius: 50%;
+    font-size: 1.2rem;
     padding: 0.5rem;
-    cursor: pointer;
-    margin: 0 0.5rem;
-}
-
-/*Buttons*/
-.icon-section {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    background-color: #3f0028;
-    padding: 2rem;
-}
-
-.icon-section img {
-    width: 50px;
-    height: 50px;
-    background-color: #fffbdd;
     border-radius: 50%;
-    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3ms
 }
 
-/*Responsive*/
+.arrow:hover {
+    background-color: #e6c23c;
+}
 
-@media (max-width: 768px) {
-    .nav-boxes {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 0.5rem;
+@media (max-width:768px) {
+    .hero-text h2  {
+        font-size: 1.5rem;
     }
 }
 
-.nav-boxe.active {
-    display: flex;
+.trending-items {
+    flex-direction: row;
+    overflow-x: scroll;
 }
 
-.menu-toggle {
-    display: block;
-}
-
-.slider {
-    overflow-x:scroll;
-}
-
-
-.icon-section {
-    flex-direction: column;
-    align-items: center;
+.trending-items img {
+    width: 100px;
 }
