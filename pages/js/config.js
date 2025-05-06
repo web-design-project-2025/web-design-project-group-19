@@ -1,23 +1,11 @@
 // TMDB API Configuration
+
+import API_CONFIG from "./api-key";
+
 const TMDB_API = {
-  API_KEY: "",
-
-  // Base URL for all API requests
-  BASE_URL: "https://api.themoviedb.org/3",
-
-  // Base URL for all images
-  IMAGE_BASE_URL: "https://image.tmdb.org/t/p",
-
-  // Default parameters for API requests
-  DEFAULT_PARAMS: {
-    language: "en-US",
-    page: 1,
-    region: "US",
-  },
-};
 
 // Image size configurations - let's check how much we use the different sizes or if they need to be changed
-TMDB_API.IMAGE_SIZES = {
+TMDB_IMAGE_SIZE : {
   poster: {
     small: "/w185",
     medium: "/w342",
@@ -33,7 +21,8 @@ TMDB_API.IMAGE_SIZES = {
     medium: "/w185",
     large: "/h632",
   },
-};
+},
+}
 
 // Export the configuration
 export default TMDB_API;

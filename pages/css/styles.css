@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #ddae78;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   flex-wrap: wrap;
   position: relative;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 /* Mobile Menu Drop mENù */
-.menu-droptoggle {
+.menu-toggle {
   display: none;
 }
 
@@ -67,12 +67,11 @@ body {
 
   .menu-droptoggle {
     display: block;
-    cursor: pointer;
     background: none;
     border: none;
     font-size: 1.8rem;
-    display: none;
     color: #3f0028;
+    cursor: pointer;
   }
 
   .nav-boxes.active {
