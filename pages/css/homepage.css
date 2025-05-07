@@ -1,114 +1,65 @@
-/*Basics*/
-body {
-    background-color: #3f0028;
-    margin: 0;
-    font-family: "Monteserrat", sans-serif;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color:inherit;
-}
-
-/*Header*/
-.site-header {
-    background-color: #3f0028;
-    padding: 1rem 0;
-}
-
-.logo-container {
-    background-color: #DDAE78;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-}
-
-/*Navigation*/
-.nav-boxes {
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-item {
-    background-color: transparent;
-    color:#3f0028;
-    border: 1px solid #3f0028; 
-    padding: 0.5rem 1rem;
-    border-radius:6px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.nav-item:hover {
-    background-color: #3f0028;
-    color: white;
-    border-color: white;
-}
-
-.menu-toggle {
-    display:none
-}
-
 /* Hero*/
 .hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text h1 {
+    background-color: #3f0028;
     text-align: center;
-    padding-bottom: 2rem;
-}
+    padding: 2rem 1rem;
+    color: #3f0028;
 
-.hero-image {
-    background-image: url("/pages/homepage-img/alpacino.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-}
-
-.hero-text {
-    margin-top: 2rem;
-    padding: 2rem;
 }
 
 .hero-text h2 {
-    font-size: 2rem;
-    margin: 0;
+    font-family: "Montserrat, sans-serif";
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 0 1rem;
+
 }
 
-
 .hero-text p {
+    font-family: "Montserrat, sans-serif";
     font-size: 1rem;
-    font-weight: 600;
-    margin:1rem 0;
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .cta-button {
     font-size: 0.9rem;
-    background-color: #ffda4f;
+    background-color: #E39A1F;
     color: #3f0028;
-    padding: 0.8rem 1.5rem;
-    border: none;
+    text-align: center;
+    padding: 0.7rem 1.5rem;
     border-radius: 6px;
-    font-weight: bold;
     text-transform: uppercase;
-    cursor: pointer;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #e6c23c;
+    background-color: #3f0028;
 }
 
+/*Trending*/
 section.trending {
     background-color: #3f0028;
     padding: 2rem 1rem;
     text-align: center;
-}
+} 
 
 .trending h3 {
+    font-family:"Montserrat", sans-serif;
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
@@ -116,44 +67,59 @@ section.trending {
 .trending-items {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap:1rem;
     overflow-x: auto;
-    padding-left: 1rem;
-    margin-left: 0;
+    padding: 0 1rem;
 }
 
-.trending img {
-    width: 120px;
-    border-radius: 6px;
+.trending-items img {
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
+.trending-items img:hover {
+    transform: scale(1.05);
+}
+
+/*Arrow*/
 .arrow {
-    background-color: #ffda4f;
+    background-color: #ddae78;
     color: #3f0028;
     border: none;
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3ms
 }
 
 .arrow:hover {
-    background-color: #e6c23c;
+    background-color: #ffe4c4;
 }
 
-@media (max-width:768px) {
-    .hero-text h2  {
-        font-size: 1.5rem;
-    }
+
+/*Responsive*/
+@media (max-width: 768px){
+    .hero-text h2 {
+        font-size: 1.2rem;
+    
+}
+
+.hero-text p {
+    font-size: 1rem;
 }
 
 .trending-items {
-    flex-direction: row;
+    flex-wrap: nowrap;
     overflow-x: scroll;
 }
 
 .trending-items img {
-    width: 100px;
+    height: 150px;
+}
+
+.arrow {
+    display: none;
+}
 }
