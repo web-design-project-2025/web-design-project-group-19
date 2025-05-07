@@ -8,24 +8,23 @@
     href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="/pages/css/styles.css" />  
-    <link rel="stylesheet" href="/pages/css/homepage.css">
+    <link rel="stylesheet" href="/pages/css/homepage.css" />
 </head>
 
 
 <body>
     <header class="site-header">
-        <div class="logo-container">
-            <img src="/pages/assets/seenitlogo.png" alt="Logo">
-            <div>
+        <div class="nav-container">
+            <img src="/pages/assets/seenitlogo.png" alt="Logo" class="logo">
             <nav class="nav-boxes">
-                <button class="nav-item">My profile<button>
-                <button class="nav-item">Browse<button>
+                <button class="nav-item">My profile</button>
+                <button class="nav-item">Browse</button>
                 <button class="nav-item">Search</button>
             </nav>
-            <button class="menu-toggle" aria-lebel="Toggle Menu">&#9776;</button>
         <div>
     <header>
 
+<main class="main-content">
         <!--hero section-->
         <section class="hero">
             <div class="hero-image">
@@ -38,6 +37,7 @@
             </div>
         </section>
 
+        <!---Trending Movies-->
         <section class="trending">
             <h3> Trending Movies</h3>
             <div class="trending-items">
@@ -48,7 +48,7 @@
                 <button class="arrow" aria-label="Scroll Right">&#8250;</button>
             </div>
         </section>
-
+        <!----Trending Shows-->
         <section class="trending">
             <h3>Trending Shows</h3>
             <div class="trending-items">
@@ -59,6 +59,9 @@
                 <button class="arrow" aria-label="Scroll Right">&#8250;</button>
             </div>
         </section>
+    <main>
+
+<script src="/pages/js/homepage.js"></script>
 
 </body>
 </html>
