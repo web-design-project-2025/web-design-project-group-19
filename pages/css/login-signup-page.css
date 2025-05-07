@@ -22,3 +22,8 @@ html {
 body {
   background-color: #3f0028;
 }
+
+.google {
+  width: 100px;
+  padding-top: 100px;
+}
