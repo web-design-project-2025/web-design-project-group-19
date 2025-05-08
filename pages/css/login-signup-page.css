@@ -1,0 +1,29 @@
+/* imported font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+/* resetting styles and setting the font for default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+/* base font size */
+html {
+  font-size: 98.5%;
+}
+
+/* basics */
+body {
+  background-color: #3f0028;
+}
+
+.google {
+  width: 100px;
+  padding-top: 100px;
+}
