@@ -108,7 +108,7 @@
   }
   
   .result-card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
     box-shadow: 0 0 10px #ffe4c4;
   }
   
