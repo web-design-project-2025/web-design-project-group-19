@@ -48,5 +48,28 @@
 
 .profile-bio {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+.favorite-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.section-name {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10;
+}
+
+.divider-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 50%;
 }
