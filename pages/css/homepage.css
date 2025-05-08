@@ -1,3 +1,25 @@
+/*Basics*/
+.site-header {
+    background-color: #ddae78;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #3f0028
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+height: 50px;
+}
+
 /* Hero*/
 .hero {
     position: relative;
@@ -11,16 +33,14 @@
     display: block;
 }
 
-.hero-text h1 {
-    background-color: #3f0028;
+.hero-text {
     text-align: center;
-    padding: 2rem 1rem;
-    color: #3f0028;
-
+    margin-top: 2rem;
 }
 
 .hero-text h2 {
     font-family: "Montserrat, sans-serif";
+    font-weight: bold;
     text-align: center;
     font-size: 1rem;
     margin: 0 0 1rem;
