@@ -44,14 +44,16 @@
 
 .hero-text h2 {
     font-family: "Montserrat, sans-serif";
+    color: #ddae78
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 0 0 1rem;
 
 }
 
 .hero-text p {
     font-family: "Montserrat, sans-serif";
+    color: #ddae78
     font-size: 1rem;
     line-height: 1.6rem;
     margin-bottom: 1.5rem;
