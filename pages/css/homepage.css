@@ -34,46 +34,44 @@
     display: block;
 }
 
-.hero-text h1 {
-    background-color: #3f0028;
-    text-align: center;
-    padding: 2rem 1rem;
-    color: #3f0028;
-
+.hero-text {
+   text-align: center;
+   margin-top: 2rem;
 }
 
 .hero-text h2 {
     font-family: "Montserrat, sans-serif";
-    color: #ddae78
-    text-align: center;
+    font-weight: bold;
+    color: #ddae78;
     font-size: 2rem;
-    margin: 0 0 1rem;
-
+    margin-bottom: 1rem;
 }
 
 .hero-text p {
     font-family: "Montserrat, sans-serif";
-    color: #ddae78
+    font-weight: bold;
+    color: #ddae78;
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: center;
 }
 
 .cta-button {
-    font-size: 0.9rem;
+    display: inline-block;
+    font-family: "Montserrat",sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
     background-color: #E39A1F;
-    color: #3f0028;
-    text-align: center;
+    color:#3f0028;
     padding: 0.7rem 1.5rem;
     border-radius: 6px;
     text-transform: uppercase;
-    font-weight: bold;
     transition: all 0.3s ease;
+    margin-top: 1rem;
 }
-
 .cta-button:hover {
     background-color: #3f0028;
+    color: #E39A1F
 }
 
 /*Trending*/
