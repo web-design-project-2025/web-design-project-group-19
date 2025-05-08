@@ -1,7 +1,7 @@
 // API Key Configuration
 
 const API_CONFIG = {
-API_KEY: "",
+API_KEY: "c51cb819cd10ae0f7e2df747f3d899e2",
 // Base URL for all API requests
 BASE_URL: "https://api.themoviedb.org/3",
 

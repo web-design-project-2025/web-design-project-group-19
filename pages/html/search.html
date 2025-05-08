@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search your next banger!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/pages/css/styles.css" />
+    <link rel="stylesheet" href="/pages/css/search.css" />
+
+    <script type="module" src="../js/search.js"></script>
+
+  </head>
+
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="/pages/assets/seenitlogo.png" alt="Logo" class="logo" />
+    </div>
+    <nav class="nav-boxes">
+      <button class="nav-item">My Profile</button>
+      <button class="nav-item">Browse</button>
+      <button class="nav-item">Search</button>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  </header>
+
+ <body>
+
+    <main class="main-content">
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for movies, TV shows, or people...">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="search-options">
+                <label>
+                    <input type="radio" name="search-type" value="movie" checked> Movies
+                </label>
+                <label>
+                    <input type="radio" name="search-type" value="tv"> TV Shows
+                </label>
+                <label>
+                    <input type="radio" name="search-type" value="person"> People
+                </label>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2 id="results-title">Popular Movies</h2>
+            <div class="results-container" id="results-container"></div>
+            <div class="pagination">
+                <button id="prev-page">Previous</button>
+                <span id="page-info">Page 1</span>
+                <button id="next-page">Next</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Responsive Adjustments -->
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav-boxes");
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("active");
+        });
+      </script>
+
+
+    <script type="module" src="/pages/js/search.js"></script>
+
+ </body>
+</html>
