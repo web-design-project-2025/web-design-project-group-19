@@ -20,7 +20,7 @@
 height: 50px;
 }
 
-/* Hero*/
+/* Hero Section*/
 .hero {
   position: relative;
   width: 100%;
@@ -33,40 +33,35 @@ height: 50px;
   display: block;
 }
 
-.hero-text h1 {
-    background-color: #3f0028;
+.hero-text {
     text-align: center;
-    padding: 2rem 1rem;
-    color: #3f0028;
-
+    margin-top: 2rem; 
 }
 
 .hero-text h2 {
-    font-family: "Montserrat, sans-serif";
+    font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 0 0 1rem;
 
 }
 
-.hero-text p {
-    font-family: "Montserrat, sans-serif";
+.hero-text h3 {
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    color: #ddae78;
-    font-size: 1rem;
+    color:  white;
+    font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 .hero-text h4 {
-    font-family: "Montserrat", sans-serif";
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     color: white;
-    font-size; 1rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
-
-
 }
 
 
@@ -88,7 +83,7 @@ height: 50px;
   color: #e39a1f;
 }
 
-/*Trending*/
+/*Trending Section*/
 section.trending {
   background-color: #3f0028;
   padding: 2rem 1rem;
@@ -120,7 +115,7 @@ section.trending {
   transform: scale(1.05);
 }
 
-/*Browse by Genre*/
+/*Browse by Genre Section*/
 section.browse {
     background-color: #3f0028;
     padding: 2rem 1rem;
@@ -144,7 +139,7 @@ section.browse {
 }
 
 .genre-items img {
-    width: 180px;¨
+    width: 180px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -152,6 +147,7 @@ section.browse {
 .genre-items img:hover {
     transform:scale (1.05);
 }
+
 /*Arrow*/
 .arrow {
   background-color: #ddae78;
@@ -177,16 +173,31 @@ section.browse {
     font-size: 1rem;
 }
 
-  .trending-items {
+.trending-items {
     flex-wrap: nowrap;
     overflow-x: scroll;
   }
 
-  .trending-items img {
+.trending-items img {
     height: 150px;
   }
 
-  .arrow {
+.browse h3 {
+    font-size:1.2rem;
+}
+
+.genre-items {
+    flex-wrap: nowrap; 
+    overflow-x: scroll;
+    gap: 0.5rem;
+}
+
+.genre-items img {
+    width: 120px;
+    height: auto;
+}
+
+.arrow {
     display: none;
   }
 }
