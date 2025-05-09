@@ -27,3 +27,13 @@ body {
   width: 100px;
   padding-top: 100px;
 }
+
+/* product images */
+.login-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
