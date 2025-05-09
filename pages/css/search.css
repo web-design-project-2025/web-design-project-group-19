@@ -188,4 +188,9 @@
     .results-container {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .site-header {
+      display: flex;
+      flex-direction: row;
+    }
 }

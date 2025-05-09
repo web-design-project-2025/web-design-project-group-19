@@ -56,6 +56,7 @@ body {
   display: none;
 }
 
+
 /* Responsive for moblie screens*/
 @media (max-width: 768px) {
   .nav-boxes {
@@ -65,8 +66,9 @@ body {
     margin-top: 1rem;
   }
 
-  .menu-droptoggle {
-    display: block;
+
+  .menu-toggle {
+    display:block;
     background: none;
     border: none;
     font-size: 1.8rem;
@@ -79,12 +81,12 @@ body {
   }
 
   .site-header {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
   }
 
   .logo-container {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
