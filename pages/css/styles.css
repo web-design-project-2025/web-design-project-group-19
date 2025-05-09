@@ -45,6 +45,17 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
+.footer {
+  background-color: #ddae78;
+  height:auto;
+  margin-top: 2px;
+}
+.footer-content {
+  color: #3f0028;
+  text-align: center;
+}
+
+
 /* Hover effect */
 
 .nav-item:hover {
