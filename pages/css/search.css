@@ -135,6 +135,16 @@
     margin-top: 0.5rem;
   }
   
+  .footer {
+    background-color: #ddae78;
+    height:auto;
+    margin-top: 2px;
+  }
+  .footer-content {
+    color: #3f0028;
+    text-align: center;
+  }
+  
   /*Pagination */
   .pagination {
     display: flex;
