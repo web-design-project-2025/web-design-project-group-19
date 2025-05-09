@@ -1,3 +1,25 @@
+/*Basics*/
+.site-header {
+    background-color: #ddae78;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #3f0028
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+height: 50px;
+}
+
 /* Hero*/
 .hero {
     position: relative;
@@ -11,30 +33,40 @@
     display: block;
 }
 
-.hero-text h1 {
-    background-color: #3f0028;
+.hero-text {
     text-align: center;
-    padding: 2rem 1rem;
-    color: #3f0028;
-
+    margin-top: 2rem;
 }
 
 .hero-text h2 {
-    font-family: "Montserrat, sans-serif";
-    text-align: center;
-    font-size: 1rem;
-    margin: 0 0 1rem;
+    font-family: "Montserrat", sans-serif";
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem;
 
 }
 
-.hero-text p {
-    font-family: "Montserrat, sans-serif";
+.hero-text h3 {
+   font-family: "Montserrat", sans-serif";
     font-weight: bold;
-    color: #ddae78;
-    font-size: 1rem;
+    color: white;
+    font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
+.hero-text h4 {
+    font-family: "Montserrat", sans-serif";
+    font-weight: bold;
+    color: white;
+    font-size; 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+
+
+}
+
 
 .cta-button {
     display: inline-block;
@@ -86,6 +118,38 @@ section.trending {
     transform: scale(1.05);
 }
 
+/*Browse by Genre*/
+section.browse {
+    background-color: #3f0028;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.browse h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.genre-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0 1rem;
+}
+
+.genre-items img {
+    width: 180px;¨
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.genre-items img:hover {
+    transform:scale (1.05);
+}
 /*Arrow*/
 .arrow {
     background-color: #ddae78;
@@ -109,8 +173,12 @@ section.trending {
     
 }
 
-.hero-text p {
+.hero-text h3 {
     font-size: 1rem;
+}
+
+.hero-text h4 {
+    font-size: 0.8rem;
 }
 
 .trending-items {
