@@ -10,7 +10,7 @@ body {
 /* Header */
 .site-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #ddae78;
   padding: 1rem 1rem;;
@@ -21,6 +21,7 @@ body {
 /* Logo */
 .logo-container {
   flex: wrap;
+  justify-content: center;
 }
 .logo {
   height: 40px;
@@ -35,7 +36,7 @@ body {
 }
 
 .nav-item {
-  background-color: #fffbdd;
+  background-color: #d3a066;
   color: #3f0028;
   border: none;
   padding: 0.7rem 1.2rem;
@@ -59,7 +60,7 @@ body {
 /* Hover effect */
 
 .nav-item:hover {
-  box-shadow: 0 0 10px #ffe4c4;
+  box-shadow: 0 0 20px #3f0028;
 }
 
 /* Mobile Menu Drop mENù */
