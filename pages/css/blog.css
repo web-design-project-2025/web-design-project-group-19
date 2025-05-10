@@ -1,0 +1,17 @@
+/*Basics*/
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #3f0028;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    background-color: #ddae78;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #3f0028;
+}
