@@ -60,70 +60,104 @@ body {
 
 .featured-article {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     background-color: #4a0033;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
     margin-bottom: 2rem;
 }
 
 
 .featured-image {
-    width: 40%;
+    width: 30%;
     border-radius: 10px;
 }
 
 .featured-text h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
     font-family: "Playfair Display", serif;
 }
 
 .featured-text p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.8rem;
 }
 
 .featured-text .author {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #ddae78;
 }
 
 /*Article Section*/
 .articles {
     display: grid;
-    grid-template-columns: repeat (auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .article {
     text-align: center;
-    background-color: #4a0033;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 12px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0  15px rgba(221,175,120,0.4 green, blue, alpha);
 }
 
 .article img {
     width: 100%;
-    border-radius: 10x;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
     margin-bottom: 1rem;
 }
 
 .article h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0 0 0.5rem;
+    font-family: "Playfair Display", serif;
 }
 
 .article p {
     font-size: 0.9rem;
     line-height: 1.4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.article.author {
+.article .author {
     font-weight: bold;
+    font-size: 0.85rem;
+    color: #ddae78;
+}
+
+.blog-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+/*Older Articles*/
+.older-articles {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
     font-size: 0.9rem;
     color: #ddae78;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.older-articles:hover {
+    text-decoration: underline;
 }
