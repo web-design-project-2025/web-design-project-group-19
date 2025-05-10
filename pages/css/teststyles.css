@@ -10,7 +10,7 @@ body {
 /* Header */
 .site-header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #ddae78;
   padding: 1rem 1rem;;
@@ -21,7 +21,6 @@ body {
 /* Logo */
 .logo-container {
   flex: wrap;
-  justify-content: center;
 }
 .logo {
   height: 40px;
@@ -36,7 +35,7 @@ body {
 }
 
 .nav-item {
-  background-color: #d3a066;
+  background-color: #fffbdd;
   color: #3f0028;
   border: none;
   padding: 0.7rem 1.2rem;
@@ -46,28 +45,16 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-.footer {
-  background-color: #ddae78;
-  height:auto;
-  margin-top: 2px;
-}
-.footer-content {
-  color: #3f0028;
-  text-align: center;
-}
-
-
 /* Hover effect */
 
 .nav-item:hover {
-  box-shadow: 0 0 20px #3f0028;
+  box-shadow: 0 0 10px #ffe4c4;
 }
 
 /* Mobile Menu Drop mENù */
 .menu-toggle {
   display: none;
 }
-
 
 /* Responsive for moblie screens*/
 @media (max-width: 768px) {
@@ -78,9 +65,8 @@ body {
     margin-top: 1rem;
   }
 
-
-  .menu-toggle {
-    display:block;
+  .menu-droptoggle {
+    display: block;
     background: none;
     border: none;
     font-size: 1.8rem;
@@ -93,12 +79,12 @@ body {
   }
 
   .site-header {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .logo-container {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

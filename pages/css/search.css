@@ -99,7 +99,7 @@
     gap: 1.5rem;
   }
   
-  .result-card {
+  .result-card  {
     background: #3f0028;
     border-radius: 8px;
     overflow: hidden;
@@ -133,6 +133,16 @@
     color: #ddae78;
     font-size: 0.9rem;
     margin-top: 0.5rem;
+  }
+  
+  .footer {
+    background-color: #ddae78;
+    height:auto;
+    margin-top: 2px;
+  }
+  .footer-content {
+    color: #3f0028;
+    text-align: center;
   }
   
   /*Pagination */
@@ -177,5 +187,10 @@
   
     .results-container {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-header {
+      display: flex;
+      flex-direction: row;
     }
 }
