@@ -123,7 +123,7 @@ body {
 .article {
     padding: 1rem;
     border-radius: 12px;
-    text-align: left;
+    text-align: center;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -147,8 +147,10 @@ body {
 
 .article h3 {
     font-family: "Helvetica", sans-serif;
+    font-style: bold;
+    text-align: center;
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     color: #FFFBDD;
     margin-bottom: 0.5rem;
 }
@@ -163,6 +165,7 @@ body {
 }
 
 .article p em {
+    font-style: normal;
     font-family: "Helvetica", sans-serif;
     font-weight: normal;
     font-size: 0.9rem;
@@ -172,6 +175,7 @@ body {
 .article .author {
     font-weight: bold;
     font-size: 0.85rem;
+    text-align: center;
     color: #FFFBDD;
 }
 
