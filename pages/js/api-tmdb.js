@@ -35,6 +35,7 @@ async function makeRequest(endpoint, params = {}, customUrl = null) {
   }
 }
 
+
 // Movie Endpoints
 export const Movies = {
   getPopular: (page = 1) => makeRequest("/movie/popular", { page }),

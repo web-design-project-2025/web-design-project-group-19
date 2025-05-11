@@ -1,5 +1,5 @@
-import { Movies, TV } from "./api-tmdb.js";
-import { getImageUrl } from "./api-tmdb.js";
+import { Movies, TV, getImageUrl } from "./api-tmdb.js";
+
 
 // Function to itemize the movies and TV shows 
 function renderItems (containerId, items,type = "movie") {
@@ -26,7 +26,8 @@ function renderItems (containerId, items,type = "movie") {
 //Fetch and show trending movies
 async function loadTrendingMovies() {
     try {
-        const data = await loadTrendingMovies.getPopular();
+        const data = await Movies.getPopular();
+        console.log("Trending Movies Data:", data);
         renderItems("trending-movies", data.results, "movie");
     } catch (error) {
         console.error("Failed to load trending movies:", error);
@@ -40,12 +41,12 @@ async function loadTrendingMovies() {
 async function loadTrendingShows() {
     try {
         const data = await TV.getPopular();
+        console.log("Trending Shows Data:", data);
         renderItems("trending-shows", data.results, "tv");
     } catch (error) {
         console.error("Failed to load trending shows:", error);
 
-    }
-    
+    }  
 }
 
 
@@ -55,4 +56,4 @@ function initHomepage() {
     loadTrendingShows();
 }
 
-document.addEventListener(DOMContentLoaded, initHomepage);
+document.addEventListener("DOMContentLoaded", initHomepage);

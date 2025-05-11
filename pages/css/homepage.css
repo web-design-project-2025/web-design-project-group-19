@@ -96,6 +96,12 @@ section.trending {
   margin-bottom: 1rem;
 }
 
+.trending-item {
+  width: 180px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 .trending-items {
   display: flex;
   align-items: center;
@@ -112,6 +118,10 @@ section.trending {
 }
 
 .trending-items img:hover {
+  transform: scale(1.05);
+}
+
+.trending-item:hover {
   transform: scale(1.05);
 }
 
