@@ -57,3 +57,37 @@ function initHomepage() {
 }
 
 document.addEventListener("DOMContentLoaded", initHomepage);
+
+
+//Add scrolling effect
+function setupScrollButtons(sectionId) {
+    const container = document.getElementById(sectionId);
+    const leftButton = container.parentElement.querySelector('.arrow[aria-label="Scroll Left"]');
+    const rightButton = container.parentElement.querySelector('.arrow[aria-label="Scroll Right"]');
+
+
+
+//Scroll left
+leftButton.addEventListener('click', () => {
+    container.scrollBy ({
+        left: -300,
+         behavior: 'smooth'
+    });
+});
+
+
+//Scroll right
+rightButton.addEventListener('click', () => {
+    container.scrollBy ({
+        left: 300,
+         behavior: 'smooth'
+    });
+});
+
+}
+
+//Initialize scrolling Trending Movies and Shows
+document.addEventListener("DOMContentLoaded", () => {
+    setupScrollButtons('trending-movies');
+    setupScrollButtons('trending-shows');
+});
