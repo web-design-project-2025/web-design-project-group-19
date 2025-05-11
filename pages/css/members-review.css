@@ -1,0 +1,61 @@
+
+
+.popular-members-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.popular-members {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+
+.popular-members.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.rotation-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.popular-header {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ margin-top: 150px;
+  padding: 10px;
+}
+/*div containers for the dividing line above images*/
+.section-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.section-name {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10;
+}
+
+.divider-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 50%;
+}
