@@ -30,10 +30,25 @@ body {
 
 /* product images */
 .login-img {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 21px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.login-img img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* trim the white space of photo */
+.google {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  padding: 0;
 }
