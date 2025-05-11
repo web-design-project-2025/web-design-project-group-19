@@ -1,21 +1,8 @@
-
-
 .popular-members-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
-}
-
-.popular-members {
-  width: 150px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  opacity: 0.5;
-  transform: scale(0.9);
-  transition: all 0.3s ease;
 }
 
 .popular-members.active {
@@ -37,8 +24,17 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
- margin-top: 150px;
+  margin-top: 150px;
   padding: 10px;
+}
+.popular-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
 }
 /*div containers for the dividing line above images*/
 .section-divider {
@@ -58,4 +54,17 @@
   border: none;
   border-top: 1px solid #ccc;
   width: 50%;
+}
+.featured-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.featured-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 40px;
+ 
 }
