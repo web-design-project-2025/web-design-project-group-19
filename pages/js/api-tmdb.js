@@ -1,12 +1,13 @@
 import API_CONFIG from "./api-key.js";
 import TMDB_API from "./config.js";
 
-
 //function for API requests
 async function makeRequest(endpoint, params = {}, customUrl = null) {
   try {
     // Use customUrl if provided, otherwise construct from base URL and endpoint
-    const url = customUrl ? new URL(customUrl) : new URL(`${API_CONFIG.BASE_URL}${endpoint}`);
+    const url = customUrl
+      ? new URL(customUrl)
+      : new URL(`${API_CONFIG.BASE_URL}${endpoint}`);
 
     // Add default parameters if we're using the API's base URL
     if (!customUrl) {
@@ -24,7 +25,6 @@ async function makeRequest(endpoint, params = {}, customUrl = null) {
       });
     }
 
-
     //Error managing
     const response = await fetch(url);
     if (!response.ok) throw new Error(`API error: ${response.status}`);
@@ -34,7 +34,6 @@ async function makeRequest(endpoint, params = {}, customUrl = null) {
     throw error;
   }
 }
-
 
 // Movie Endpoints
 export const Movies = {
@@ -70,7 +69,11 @@ export const People = {
 };
 
 // Images
-export function getImageUrl(path, size = TMDB_API.TMDB_IMAGE_SIZE.poster.medium, type = "poster") {
+export function getImageUrl(
+  path,
+  size = TMDB_API.TMDB_IMAGE_SIZE.poster.medium,
+  type = "poster"
+) {
   if (!path) return null;
   const sizePath = TMDB_API.TMDB_IMAGE_SIZE[type]?.[size] || "";
   return `${API_CONFIG.IMAGE_BASE_URL}/${TMDB_API.TMDB_IMAGE_SIZE.poster.medium}${path}`;

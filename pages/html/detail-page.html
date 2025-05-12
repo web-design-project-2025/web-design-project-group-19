@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Search Details</title>
+    <link rel="stylesheet" href="/pages/css/styles.css" />
+    <link rel="stylesheet" href="/pages/css/detail.css" />
+  </head>
+
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="../assets/seenitlogo.png" alt="Logo" class="logo" />
+    </div>
+    <nav class="nav-boxes">
+      <button class="nav-item" href="user-profile.html">My Profile</button>
+      <button class="nav-item">Browse</button>
+      <button class="nav-item" href="search.html">Search</button>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  </header>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="search.html" class="back-button">← Back to Search</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="loading" class="loading">Loading...</div>
+
+      <div id="detail-container" class="detail-container hidden">
+        <div class="media-content">
+          <div class="media-poster-container">
+            <img
+              id="media-poster"
+              class="media-poster"
+              src=""
+              alt="Media Poster"
+            />
+          </div>
+          <div class="media-info">
+            <h1 id="media-title" class="media-title"></h1>
+            <div id="media-meta" class="media-meta"></div>
+            <div id="media-genres" class="media-genres"></div>
+            <p id="media-overview" class="media-overview"></p>
+          </div>
+        </div>
+
+        <div class="credits-section">
+          <h2 class="section-title">Cast</h2>
+          <div id="cast-grid" class="cast-grid"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <p>
+            &copy; 2025 SeenIt?. Made by students in Sweden. Film data from
+            <a href="https://www.themoviedb.org/">TMDB</a>. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-boxes");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+    <script type="module" src="../js/detail.js"></script>
+  </body>
+</html>
