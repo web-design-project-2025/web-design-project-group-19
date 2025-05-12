@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .popular-members-container {
   display: flex;
   align-items: center;
@@ -66,5 +70,19 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 40px;
- 
+}
+
+.featured-container figcaption {
+  font-size: 12px;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.featured-container figure {
+  text-align: center;
+  margin: 0;
 }
