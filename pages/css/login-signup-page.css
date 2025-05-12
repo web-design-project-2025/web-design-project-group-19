@@ -1,35 +1,25 @@
-/* imported font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
-
-/* resetting styles and setting the font for default */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
 }
 
-/* base font size */
-html {
-  font-size: 98.5%;
-}
-
-/* basics */
+html,
 body {
-  background-color: #3f0028;
+  height: 100%;
+  margin: 0;
 }
 
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* faded rectangle box */
 .logo-box {
   background-color: #4c102b;
-  padding: 30px 40px;
+  padding: 200px 250px;
   border-radius: 12px;
   display: inline-block;
-  margin: 0 auto;
-  justify-content: center;
 }
 
 /* product images */
@@ -62,4 +52,13 @@ h2 {
   font-size: 30px;
   text-align: center;
   margin-top: 50px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .logo-box {
+    max-width: 768px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }

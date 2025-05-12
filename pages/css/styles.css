@@ -13,7 +13,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   background-color: #ddae78;
-  padding: 1rem 1rem;;
+  padding: 1rem 1rem;
   flex-wrap: wrap;
   position: relative;
 }
@@ -21,7 +21,6 @@ body {
 /* Logo */
 .logo-container {
   flex: wrap;
-  justify-content: center;
 }
 .logo {
   height: 40px;
@@ -48,14 +47,13 @@ body {
 
 .footer {
   background-color: #ddae78;
-  height:auto;
+  height: auto;
   margin-top: 2px;
 }
 .footer-content {
   color: #3f0028;
   text-align: center;
 }
-
 
 /* Hover effect */
 
@@ -68,7 +66,6 @@ body {
   display: none;
 }
 
-
 /* Responsive for moblie screens*/
 @media (max-width: 768px) {
   .nav-boxes {
@@ -78,9 +75,8 @@ body {
     margin-top: 1rem;
   }
 
-
   .menu-toggle {
-    display:block;
+    display: block;
     background: none;
     border: none;
     font-size: 1.8rem;
