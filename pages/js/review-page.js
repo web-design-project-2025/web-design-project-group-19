@@ -1,10 +1,12 @@
 import { Movies, getImageUrl } from "./api-tmdb.js";
 
+
 // Function to fetch and display movie details
 async function loadMovieDetails(movieId) {
     try {
         const movie = await Movies.getDetails(movieId);
         document.querySelector(".movie-poster").src = getImageUrl(movie.poster_path);
+        document.querySelector(".movie-poster").alt = movie.title;
         document.querySelector(".movie-title").textContent = movie.title;
         document.querySelector(".movie-overview").textContent = movie.overview;
     } catch (error) {
@@ -20,7 +22,7 @@ async function loadReviews(movieId) {
         reviewList.innerHTML = ""; 
 
 
-        if (reviews.results.length === 0) {
+        if (!review.results || reviews.results.length === 0) {
             reviewList.innerHTML = "<p>No reviews available for this movie.</p>";
         return;
   }
@@ -64,6 +66,7 @@ if (!movieId) {
 
 }
     
+console.log("Loading movie ID:", movieId);
 loadMovieDetails(movieId);
 loadReviews(movieId);
 
