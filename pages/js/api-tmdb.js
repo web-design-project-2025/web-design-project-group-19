@@ -44,7 +44,20 @@ export const Movies = {
   getDetails: (movieId) => makeRequest(`/movie/${movieId}`),
   getCredits: (movieId) => makeRequest(`/movie/${movieId}/credits`),
   search: (query, page = 1) => makeRequest("/search/movie", { query, page }),
+
+
+  async getDetails (movieId) {
+    const response = await fetch(`${API_CONFIG.BASE_URL}/movie/${movieId}?api_key=${API_CONFIG.API_KEY}&language=en-US`);
+    return await response.json();
+  },
+  async getReviews(movieId) {
+    const response = await fetch (`${API_CONFIG.BASE_URL}/movie/${movieId}/reviews?api_key=${API_CONFIG.API_KEY}&language=en-US`);
+      return await response.json();
+    
+  }
+
 };
+
 
 // TV Show Endpoints
 export const TV = {
