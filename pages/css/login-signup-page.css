@@ -54,21 +54,25 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .text-name {
   font-size: 20px;
   color: #3f0028;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: #fffbdd;
+  border-radius: 3px;
 }
 
 .text-email {
   font-size: 20px;
   color: #3f0028;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  background-color: #fffbdd;
+  border-radius: 3px;
 }
 
 .text-password {
@@ -76,6 +80,8 @@ body {
   color: #3f0028;
   margin-top: 0px;
   margin-bottom: 30px;
+  background-color: #fffbdd;
+  border-radius: 3px;
 }
 
 /* trim the white space of photo */
@@ -97,6 +103,13 @@ h2 {
 /* responsive */
 @media (max-width: 768px) {
   .logo-box {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .signup-box {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
