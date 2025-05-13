@@ -78,3 +78,12 @@ export function getImageUrl(
   const sizePath = TMDB_API.TMDB_IMAGE_SIZE[type]?.[size] || "";
   return `${API_CONFIG.IMAGE_BASE_URL}/${TMDB_API.TMDB_IMAGE_SIZE.poster.medium}${path}`;
 }
+
+export const Genres = {
+  getMovieList: () => makeRequest("/genre/movie/list"),
+  getTVList: () => makeRequest("/genre/tv/list"),
+  getMoviesByGenre: (genreId, page = 1) => 
+    makeRequest("/discover/movie", { with_genres: genreId, page }),
+  getTVByGenre: (genreId, page = 1) => 
+    makeRequest("/discover/tv", { with_genres: genreId, page }),
+};
