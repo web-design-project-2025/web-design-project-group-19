@@ -1,0 +1,122 @@
+/* Basics */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3f0028;
+    color: #FFFBDD;
+}
+
+.aite-header {
+    background-color: #ddae78;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #3f0028
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-boxes .nav-item {
+    background-color: #e39a1f;
+    color: #3f0028;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-boxes.nav-item:hover {
+    background-color: #3f0028;
+    color: #e39a1f;
+}
+
+/* Movie Information Section */
+.movie-info {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #4a0033;
+    border-radius: 10px;
+}
+
+.movie-poster {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.movie-details {
+    flex: 1;
+}
+
+.movie-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #e39a1f;
+}
+
+
+.movie-overview {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+/* Review Section */
+.reviews {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #4a0033;
+    border-radius: 10px;
+}
+
+.reviews h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e39a1f;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.review-item {
+    background-color: #3f0028;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.review-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #FFFBDD;
+}
+
+.review-content {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #FFFBDD;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 1rem;background-color: #3f0028;
+    color: #FFFBDD
+}
