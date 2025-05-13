@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Reviews</title>
-    <link rel="stylesheet" href= "">
+    <title>Review Page</title>
+    <link rel="stylesheet" href= "../css/styles.css">
+    <link rel="stylesheet" href="../css/review-page.css">
 </head>
 <body>
-    <h1>Movie Review Finder</h1>
+    <header class="site-header">
+        <div class="nav-container">
+            <img src="../assets/seenitlogo.png" alt="Logo" class="logo">
+            <nav class="'nav-boxes">
+                <button class="nav-item">Home</button>
+                <button class="nav-item">Browse</button>
+                <button class="nav-item">Search</button>
+
+            </nav>
+        </div>
+    </header>
     
 
+    <main class="review-content">
+        <section class="movie-info">
+            <img src="Movie Poster" class="movie-poster">
+            <div class="movie-details">
+                <h1 class="movie-title">Movie Title</h1> 
+                <p class="movie-overview">Movie overview will go here....</p>  
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <div class="review-list">
+                <!--- Reviews will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
 
 
+<footer class="site-footer">
+    <p>&copy; 2025 SeenIt. All rights reserved.</p>
+</footer>
+
+<script src="../js/review-page.js"></script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 </body>
 </html>
