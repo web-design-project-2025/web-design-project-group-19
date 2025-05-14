@@ -9,6 +9,7 @@ body {
   position: relative;
   margin-left: 200px;
   margin-right: 200px;
+  margin-bottom: 50px;
 }
 
 .popular-members-wheel {
@@ -25,22 +26,29 @@ body {
 .profile-card {
   flex: 0 0 auto;
   width: 150px;
-  height: 150px;
+  height: auto;
   text-align: center;
-  border-radius: 50%;
   overflow: hidden;
+
 }
 
 .profile-card img {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
 }
-.profile-card figcaption {
+
+.popular-usernames , .popular-usernames-kermit {
   font-size: 12px;
   padding: 10px;
+ margin-top: 10px;
+  text-align: center;
+color: white;
 }
+
+
+
 
 .profile-card-active {
   opacity: 1;
@@ -48,7 +56,7 @@ body {
   z-index: 2;
 }
 
-.rotation-button {
+.arrow  {
   background-image: linear-gradient(135deg, #e39a1f, #ddae78); /* fixed */
   color: #3f0028;
   border: none;
@@ -102,6 +110,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   margin-top: 50px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .featured-container figure {
@@ -130,10 +141,10 @@ body {
 .review-profile {
   display: flex;
   align-items: center;
-  gap: 1x;
+  gap: 10px;
   margin-top: 20px;
-  margin-bottom: -50px;
-  margin-left: -110px;
+  margin-bottom: 50px;
+ 
 }
 
 .profile-review-img {
@@ -147,7 +158,7 @@ body {
   align-items: center;
   margin-bottom: 50px;
   font-size: 15px;
-  margin-left: 45px;
+  margin:0;
 }
 
 .movie-review {
