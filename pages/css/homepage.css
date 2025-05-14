@@ -267,7 +267,9 @@ section.browse {
 .arrow:active {
   transform: scale(0.95);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+
 }
+
 
 /* Footer */
 .site-footer {
