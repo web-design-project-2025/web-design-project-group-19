@@ -1,10 +1,10 @@
 /* Basic style */
 body {
   margin: 0;
-  background-color: #3f0028;
+  background-color:#300505;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  color: white;
+  color: #ffe4c4;
 }
 
 /* Header */
@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #ddae78;
+  background-color: #500101;
   padding: 1rem 1rem;
   flex-wrap: wrap;
   position: relative;
@@ -21,7 +21,7 @@ body {
 /* Logo */
 .logo-button {
   flex: wrap;
-  background-color: #ddae78;
+  background-color: #220016;
   border: none;
   border-radius: 8px;
 }
@@ -35,7 +35,7 @@ body {
 
 .logo-button:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 20px #3f0028;
+  box-shadow: 0 0 20px #ffe4c4;
 }
 
 /* Navigation Boxes */
@@ -45,8 +45,8 @@ body {
 }
 
 .nav-item {
-  background-color: #d3a066;
-  color: #3f0028;
+  background-color: #300505;
+  color: #ffe4c4;
   border: none;
   padding: 0.7rem 1.2rem;
   border-radius: 8px;
@@ -56,19 +56,19 @@ body {
 }
 
 .footer {
-  background-color: #ddae78;
+  background-color: #300505;
   height: auto;
   margin-top: 2px;
 }
 .footer-content {
-  color: #3f0028;
+  color: #ffe4c4;
   text-align: center;
 }
 
 /* Hover effect */
 
 .nav-item:hover {
-  box-shadow: 0 0 20px #3f0028;
+  box-shadow: 0 0 20px #ffe4c4;
 }
 
 /* Mobile Menu Drop mENù */
@@ -90,7 +90,7 @@ body {
     background: none;
     border: none;
     font-size: 1.8rem;
-    color: #3f0028;
+    color: #ffe4c4;
     cursor: pointer;
   }
 
