@@ -191,5 +191,48 @@ body {
   padding: 20px;
 }
 
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .popular-members-wheel {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .profile-card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-card figcaption {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .rotation-button {
+    font-size: 16px;
+    padding: 0.5rem 0.9rem;
+  }
+
+  .featured-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  .featured-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-review-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .movie-img {
+    width: 80px;
+    height: auto;
+  }
+
+  .movie-title {
+    font-size: 16px;
+  }
 }
