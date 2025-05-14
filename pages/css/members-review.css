@@ -2,24 +2,56 @@ body {
   overflow-x: hidden;
 }
 
-.popular-members-container {
+.popular-members-wheel {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
-.popular-members.active {
+.profile-card {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  transition: all 0.5s ease;
+  position: relative;
+  opacity: 0.5;
+  overflow: hidden;
+  transform: scale(1);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.profile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-card figcaption {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.profile-card-active {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1);
+  z-index: 2;
 }
 
 .rotation-button {
-  background: none;
+  background-image: linear-gradient(135deg, #e39a1f, #ddae78); /* fixed */
+  color: #3f0028;
   border: none;
-  font-size: 2rem;
-  color: white;
+  font-size: 20px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50%;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* fixed */
+  transition: all 0.3s ease;
 }
 
 .popular-header {
@@ -28,16 +60,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 150px;
-  padding: 10px;
+  margin-top: 100px;
+  padding: 20px;
+  padding-bottom: 60px;
 }
-.popular-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  opacity: 0.5;
-}
+
 /*div containers for the dividing line above images*/
 .section-divider {
   display: flex;
@@ -63,30 +90,29 @@ body {
   object-fit: cover;
   border-radius: 100%;
 }
+
 .featured-container {
- 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 4px;
+  margin-top: 50px;
 }
 
+.featured-container figure {
+  text-align: center;
+  margin: 0;
+}
 
-
-.featured-container figcaption {
+.featured-username {
   font-size: 12px;
   color: #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5px;
-  line-height: 1.2;
-}
-
-.featured-container figure {
-  text-align: center;
-  margin: 0;
+  padding: 20px;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 .popular-reviews-container {
@@ -163,4 +189,7 @@ body {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+}
+
+@media screen (max-width: 768px) {
 }
