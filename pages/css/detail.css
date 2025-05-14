@@ -9,8 +9,8 @@
 }
 
 .header {
-  background-color: #3f0028;
-  color: #ddae78;
+  background-color:#300505;
+  color: #ffe4c4;
   padding: 20px 0;
   margin-bottom: 30px;
   text-align: center;
@@ -19,8 +19,8 @@
 .back-button {
   position: relative;
   left: 20px;
-  background-color: #d3a066;
-  color: #3f0028;
+  background-color: #ffe4c4;
+  color: #500101;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: bold;
@@ -35,7 +35,7 @@
   text-align: center;
   font-size: 1.5rem;
   margin: 50px 0;
-  color: #ddae78;
+  color: #ffe4c4;
 }
 
 .media-content {
@@ -57,11 +57,11 @@
 .media-title {
   margin: 0 0 15px;
   font-size: 2rem;
-  color: #ddae78;
+  color: #eea300;
 }
 
 .media-meta {
-  color: #d3a066;
+  color: #ffe4c4;
   margin-bottom: 15px;
   font-size: 1rem;
 }
@@ -74,8 +74,8 @@
 }
 
 .genre-tag {
-  background-color: #d3a066;
-  color: #3f0028;
+  background-color: #500101;
+  color: #ffe4c4;
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -89,10 +89,10 @@
 
 /* Cast Grid*/
 .section-title {
-  border-bottom: 2px solid #d3a066;
+  border-bottom: 2px solid #ffe4c4;
   padding-bottom: 5px;
   margin: 0 0 20px;
-  color: #ddae78;
+  color: #ffe4c4;
   font-size: 1.5rem;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .cast-card {
-  background-color: #3f0028;
+  background-color: #500101;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -131,14 +131,14 @@
 
 .cast-character {
   font-size: 0.9rem;
-  color: #d3a066;
+  color: #ffe4c4;
   margin: 0;
 }
 
 .no-cast {
   text-align: center;
   grid-column: 1 / -1;
-  color: #d3a066;
+  color: #ffe4c4;
   font-style: italic;
 }
 
@@ -176,7 +176,7 @@
 
 .known-for-character {
   font-size: 0.8rem;
-  color: #d3a066;
+  color: #ffe4c4;
   margin: 0;
 }
 
