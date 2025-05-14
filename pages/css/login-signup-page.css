@@ -19,7 +19,7 @@ body {
 .logo-box {
   height: 90%;
   width: 95%;
-  background-color: #4c102b;
+  background-color: #500101;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ body {
 .signup-box {
   height: 30%;
   width: 60%;
-  background-color: #3f0028;
+  background-color: #300505;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -58,16 +58,13 @@ body {
 
 .text-name {
   font-size: 20px;
-  color: #3f0028;
   margin-top: 10px;
   margin-bottom: 15px;
-  background-color: #fffbdd;
   border-radius: 3px;
 }
 
 .text-email {
   font-size: 20px;
-  color: #3f0028;
   margin-top: 0px;
   margin-bottom: 15px;
   background-color: #fffbdd;
@@ -76,7 +73,6 @@ body {
 
 .text-password {
   font-size: 20px;
-  color: #3f0028;
   margin-top: 0px;
   margin-bottom: 30px;
   background-color: #fffbdd;
@@ -132,6 +128,11 @@ h2 {
   }
 
   .login-img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .login-img img.google {
     width: 60px;
     height: 60px;
   }
