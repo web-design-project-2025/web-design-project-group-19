@@ -42,7 +42,6 @@ async function loadTrendingShows() {
   }
 }
 
-
 // Initalize the homepage
 function initHomepage() {
   loadTrendingMovies();

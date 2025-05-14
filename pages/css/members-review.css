@@ -2,27 +2,32 @@ body {
   overflow-x: hidden;
 }
 
+.popular-members-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
 .popular-members-wheel {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 10px;
 }
 
 .profile-card {
+  flex: 0 0 auto;
   width: 150px;
   height: 150px;
   text-align: center;
-  transition: all 0.5s ease;
-  position: relative;
-  opacity: 0.5;
-  overflow: hidden;
-  transform: scale(1);
-  z-index: 1;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .profile-card img {
@@ -50,7 +55,7 @@ body {
   padding: 0.7rem 1.2rem;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* fixed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 

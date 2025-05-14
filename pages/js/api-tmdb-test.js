@@ -97,3 +97,4 @@ export const Genres = {
   getTVByGenre: (genreId, page = 1) => 
     makeRequest("/discover/tv", { with_genres: genreId, page }),
 };
+
