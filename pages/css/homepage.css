@@ -83,6 +83,74 @@ height: 50px;
   color: #e39a1f;
 }
 
+/* Features Section */
+.features-section {
+  background: #220016;
+  color: white;
+  padding: 40px 0 30px 0;
+  margin-top: 32px;
+  text-align: center;
+  box-shadow:  0 2px 8px rgba(34,0,22,0.12);
+  position: relative;
+  z-index: 1;
+}
+
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+
+.feature-card {
+  background: linear-gradient(135deg, #3f0028 80%, #5a1a3c 100%);
+  border-radius: 16px;
+  padding: 32px 22px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid #5a1a3c;
+  transition: transform 0.25s cubic-bezier(.4,2,.6,1); box-shadow 0.25s, border 0.25s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 32px rgba (227,154,31,0.18);
+  border: 1.5px solid #e39a1f;
+  transition: text-shadow 0.25s, color 0.25s;
+}
+
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.feature-card:hover .feature-icon {
+  color: ffe4c4;
+  text-shadow: 0 0 12px #e39a1f, 0 0 4px #fff;
+}
+
+.feature-card h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffe4c4;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #f3e7d8;
+  margin: 0;
+}
 /*Trending Section*/
 section.trending {
   background-color: #3f0028;
@@ -184,6 +252,13 @@ section.browse {
   box-shadow: 0 2px 4px rgba(0,0,0,0.2)
 }
 
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 1rem;background-color: #3f0028;
+    color: white;
+}
+
 /*Responsive*/
 @media (max-width: 768px) {
   .hero-text h2 {
@@ -193,6 +268,17 @@ section.browse {
 .hero-text p {
     font-size: 1rem;
 }
+
+.features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.feature-card {
+    width: 90%;
+    
+  }
+
 
 .trending-items {
     flex-wrap: nowrap;
@@ -207,7 +293,7 @@ section.browse {
     font-size:1.2rem;
 }
 
-.genre-items {
+.genre-items 
     flex-wrap: nowrap; 
     overflow-x: scroll;
     gap: 0.5rem;
@@ -221,4 +307,4 @@ section.browse {
 .arrow {
     display: none;
   }
-}
+
