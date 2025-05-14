@@ -19,6 +19,7 @@ body {
   scroll-behavior: smooth;
   white-space: nowrap;
   padding: 10px;
+  scrollbar-width: none;
 }
 
 .profile-card {

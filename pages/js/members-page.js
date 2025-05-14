@@ -8,6 +8,11 @@ const scrollStep = 300;
 
 // Scroll to the left
 prevButton.addEventListener("click", () => {
+    if (membersWheel.scrollLeft === 0) {
+       const lastCard = membersWheel.lastElementChild;
+       membersWheel.Prepend(lastCard);
+       membersWheel.scrollLeft += lastCard.offsetWidth +10;
+    }
   membersWheel.scrollBy({
     left: -scrollStep,
     behavior: "smooth",
@@ -16,6 +21,12 @@ prevButton.addEventListener("click", () => {
 
 // Scroll to the right
 nextButton.addEventListener("click", () => {
+    const maxScrollLeft = membersWheel.scrollWidth - membersWheel.clientWidth;
+    if (membersWheel.scrollLeft >= maxScrollLeft) {
+       const firstCard = membersWheel.firstElementChild;
+       membersWheel.append(firstCard);
+       membersWheel.scrollLeft -= firstCard.offsetWidth +10;
+    }
   membersWheel.scrollBy({
     left: scrollStep,
     behavior: "smooth",
