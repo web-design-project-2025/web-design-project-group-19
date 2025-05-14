@@ -339,3 +339,5 @@ section.browse {
     display: none;
   }
 
+/*command to remove the white scrolling bar
+ /*  ->  scrollbar-width: none; 
