@@ -252,6 +252,13 @@ section.browse {
   box-shadow: 0 2px 4px rgba(0,0,0,0.2)
 }
 
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 1rem;background-color: #3f0028;
+    color: white;
+}
+
 /*Responsive*/
 @media (max-width: 768px) {
   .hero-text h2 {
