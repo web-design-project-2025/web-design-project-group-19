@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="/pages/css/styles.css" />
     <link rel="stylesheet" href="/pages/css/members-review.css" />
+
+    <script src="../js/members-page.js" defer></script>
   </head>
 
   <body>
@@ -40,8 +42,9 @@
 
       <!--container for the popular members images and rotation buttons-->
       <div class="popular-members-container">
-        <button class="rotation-button rotation-button-left" id="nextimg"><</button>
-
+        <button class="arrow rotation-button-left" aria-label="Scroll Left">
+          &#8249;
+        </button>
         <div class="popular-members-wheel">
           <figure class="profile-card">
             <img
@@ -59,6 +62,7 @@
             />
             <figcaption>Sassy_Shrek</figcaption>
           </figure>
+
           <figure class="profile-card">
             <img
               src="../assets/members-img/guy.jpg"
@@ -67,8 +71,30 @@
             />
             <figcaption>Theo lewis</figcaption>
           </figure>
+
+           
+          <figure class="profile-card">
+            <img
+              src="../assets/members-img/hamster.jpg"
+              alt="hamster profile"
+              class="popular-img"
+            />
+            <figcaption>We__Wei</figcaption>
+          </figure>
+
+           
+          <figure class="profile-card">
+            <img
+              src="../assets/members-img/duck.jpg"
+              alt="guy profile"
+              class="popular-img"
+            />
+            <figcaption>Rickardo</figcaption>
+          </figure>
         </div>
-        <button class="rotation-button rotation-button-right" id="nextimg">></button>
+        <button class="arrow rotation-button-right" aria-label="Scroll Right">
+          &#8250;
+        </button>
       </div>
 
       <!--divider line for  watchlist-->
