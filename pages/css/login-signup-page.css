@@ -38,9 +38,8 @@ body {
 }
 
 .login-img img {
-  width: 80px;
-  height: auto;
-  object-fit: contain;
+  width: 90px; /* changes size of logo pic */
+  height: 90px;
   border-radius: 50%;
 }
 
@@ -54,7 +53,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .text-name {
@@ -85,11 +84,22 @@ body {
 }
 
 /* trim the white space of photo */
-.google {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-  padding: 0;
+.login-img img.google {
+  height: 100px;
+  width: 100px;
+}
+
+/* signup button */
+.sign-up {
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+
+.sign-up:hover {
+  background-color: white;
 }
 
 /* log in text above logos */
@@ -123,5 +133,6 @@ h2 {
 
   .login-img img {
     width: 60px;
+    height: 60px;
   }
 }
