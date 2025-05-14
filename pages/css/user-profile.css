@@ -97,3 +97,35 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 0 10px #ffe4c4;
 }
+
+@media screen and (min-width: 768px) {
+  .kermit {
+    width: 120px;
+    margin-top: 60px;
+  }
+
+  .film-img {
+    width: 180px;
+    height: 280px;
+  }
+
+  .profile-info {
+    font-size: 13px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .profile-bio {
+    font-size: 13px;
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .status-profile {
+    gap: 50px;
+  }
+
+  .section-name {
+    font-size: 17px;
+  }
+}
