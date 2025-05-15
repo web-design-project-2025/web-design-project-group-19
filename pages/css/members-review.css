@@ -118,6 +118,7 @@ color: white;
 .featured-container figure {
   text-align: center;
   margin: 0;
+  
 }
 
 .featured-username {
@@ -130,6 +131,7 @@ color: white;
   padding: 20px;
   margin-bottom: 10px;
   line-height: 1.6;
+  text-decoration: none;
 }
 
 .popular-reviews-container {
