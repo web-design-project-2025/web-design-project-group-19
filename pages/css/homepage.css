@@ -326,7 +326,7 @@ section.browse {
     font-size:1.2rem;
 }
 
-.genre-items 
+.genre-items {
     flex-wrap: nowrap; 
     overflow-x: scroll;
     gap: 0.5rem;
