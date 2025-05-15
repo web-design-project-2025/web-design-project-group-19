@@ -1,3 +1,36 @@
+/*container for films images*/
+.favorite-films-container,
+.recent-films-container,
+.watchlist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  padding: 30px;
+}
+
+/*div containers for the dividing line above images*/
+.section-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.section-name {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10;
+}
+
+.divider-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 50%;
+}
+
 .profile-container {
   display: flex;
   justify-content: center;

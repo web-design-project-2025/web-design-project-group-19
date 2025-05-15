@@ -40,10 +40,10 @@
     <main>
       <div class="profile-container">
         <img
-         id="profilePicture"
-         src="../assets/profile-img/ponyo.jpg"
-         alt="user profile picture"
-         class="profile-pic"
+          id="profilePicture"
+          src="../assets/profile-img/ponyo.jpg"
+          alt="user profile picture"
+          class="profile-pic"
         />
 
         <div class="profile-info">
@@ -84,13 +84,33 @@
     </main>
 
     <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
     <script src="../auth/firebase-config.js"></script>
     <script src="../auth/auth.js"></script>
     <script src="../auth/profile.js"></script>
-    
+
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-boxes");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <p>
+            &copy; 2025 SeenIt?. Made by students in Sweden. Film data from
+            <a href="https://www.themoviedb.org/">TMDB</a>. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Responsive Adjustments -->
     <script>
       const toggle = document.querySelector(".menu-toggle");
       const nav = document.querySelector(".nav-boxes");
