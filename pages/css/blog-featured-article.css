@@ -29,6 +29,7 @@ body {
     color: #e39a1f;
     margin-bottom: 0.7rem;
     letter-spacing: 0.5px;
+    text-align: center;
 }
 
 
@@ -40,6 +41,7 @@ body {
     margin-bottom: 1.5rem;
     line-height: 1.6;
     display: block;
+    text-align: center;
 }
 
 .article-meta {
