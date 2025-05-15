@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User profile</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/user-profile.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <button
+        class="logo-button"
+        onclick="window.location.href='homepage.html';"
+      >
+        <img src="../assets/seenitlogo.png" alt="Logo" class="logo" />
+      </button>
+
+      <nav class="nav-boxes">
+        <a href="../html/user-profile.html">
+          <button class="nav-item">My Profile</button>
+        </a>
+        <a href="../html/members-review.html">
+          <button class="nav-item">Members</button>
+        </a>
+        <a href="../html/search.html">
+          <button class="nav-item">Search</button>
+        </a>
+        <button id="logoutBtn" class="nav-item">Logout</button>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <main>
+      <div class="profile-container">
+        <img
+          id="profilePicture"
+          src="../assets/profile-img/ponyo.jpg"
+          alt="user profile picture"
+          class="profile-pic"
+        />
+
+        <div class="profile-info">
+          <h1 id="usernameProfile" class="username-profile">Loading...</h1>
+
+          <div class="status-profile">
+            <p>Reviews<br /><span id="reviewCount">0</span></p>
+            <p>Followers<br /><span id="followerCount">0</span></p>
+            <p>Following<br /><span id="followingCount">0</span></p>
+          </div>
+
+          <div class="member-date">
+            <p>MEMBER SINCE</p>
+            <p id="joinDate" class="date">Loading...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider">
+        <h2 class="section-name">BIO</h2>
+      </div>
+      <hr class="divider-line" />
+
+      <div class="profile-bio">
+        <p id="userBio">Loading bio...</p>
+        <button id="editBioBtn" class="edit-btn">Edit Bio</button>
+      </div>
+
+      <!-- Rest of your existing film sections -->
+      <div class="section-divider">
+        <h2 class="section-name">Favorite Films</h2>
+      </div>
+      <hr class="divider-line" />
+
+      <div class="favorite-films-container">
+        <!-- Films will be populated dynamically -->
+      </div>
+    </main>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="../js/firebase-config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/profile.js"></script>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <p>
+            &copy; 2025 SeenIt?. Made by students in Sweden. Film data from
+            <a href="https://www.themoviedb.org/">TMDB</a>. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-boxes");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
