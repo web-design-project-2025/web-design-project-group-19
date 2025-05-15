@@ -82,28 +82,32 @@ body {
 /*Featured Article*/
 .featured-article {
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
     background-color: #4a0033;
-    padding:1.5rem;
-    border-radius: 9px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 12px;
     align-items: center;
-    max-width: 600px;
+    max-width: 700px;
     margin: 2rem auto;
     transition: transform 0.3s ease;
     text-align: center;
 }
 
 .featured-image {
-    width: 25%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
+  
 
 .featured-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
 }
 
 .featured-article h2 {
