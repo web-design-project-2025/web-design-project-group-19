@@ -14,7 +14,7 @@ logoutBtn.addEventListener("click", () => {
   auth
     .signOut()
     .then(() => {
-      window.location.href = "/pages/html/login-signup-page.html.html";
+      window.location.href = "/pages/html/login-signup-page.html";
     })
     .catch((err) => {
       console.error("Logout error:", err);
