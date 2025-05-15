@@ -13,7 +13,7 @@ function renderItems(containerId, items, type = "movie") {
     img.classList.add("trending-item");
 
     img.addEventListener("click", () => {
-      window.location.href = `detail-page.html?type=${type}&id=${item.id}`;
+      window.location.href = `/pages/html/detail-page.html?type=${type}&id=${item.id}`;
     });
 
     container.appendChild(img);
