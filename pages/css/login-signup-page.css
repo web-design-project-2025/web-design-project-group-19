@@ -37,9 +37,8 @@ body {
 }
 
 .login-img img {
-  width: 80px;
-  height: auto;
-  object-fit: contain;
+  width: 90px; /* changes size of logo pic */
+  height: 90px;
   border-radius: 50%;
 }
 
@@ -53,36 +52,33 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
+/* sign up text boxes */
 .text-name {
   font-size: 20px;
-  color: #500101;
+  color: #3f0028;
   margin-top: 10px;
   margin-bottom: 15px;
-  background-color: #fffbdd;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .text-email {
   font-size: 20px;
-  color: #3f0028;
   margin-top: 0px;
   margin-bottom: 15px;
-  background-color: #fffbdd;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .text-password {
   font-size: 20px;
-  color: #3f0028;
   margin-top: 0px;
   margin-bottom: 30px;
-  background-color: #fffbdd;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
+/* trim the white space of photo */
 .google {
   height: 60px;
   width: auto;
@@ -92,7 +88,7 @@ body {
 
 /* log in text above logos */
 h2 {
-  font-size: 26px;
+  font-size: 28px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -121,5 +117,11 @@ h2 {
 
   .login-img img {
     width: 60px;
+    height: 60px;
   }
-} 
+
+  .login-img img.google {
+    width: 60px;
+    height: 60px;
+  }
+}
