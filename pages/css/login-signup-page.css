@@ -56,27 +56,26 @@ body {
   margin-bottom: 50px;
 }
 
+/* sign up text boxes */
 .text-name {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 15px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .text-email {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 15px;
-  background-color: #fffbdd;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .text-password {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 30px;
-  background-color: #fffbdd;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 /* trim the white space of photo */
@@ -100,7 +99,7 @@ body {
 
 /* log in text above logos */
 h2 {
-  font-size: 26px;
+  font-size: 28px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;

@@ -7,23 +7,35 @@
     <link
     href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
     rel="stylesheet">
-    <link rel="stylesheet" href= "/pages/css/styles.css" />
-    <link rel="stylesheet" href= "/pages/css/blog-article.css">
+    <link rel="stylesheet" href= "../css/styles.css" />
+    <link rel="stylesheet" href= "../css/blog-featured-article.css">
 </head>
 
+ <body>
+    <header class="site-header">
+      <div class="logo-container">
+        <figure>
+          <a href="/index.html">
+            <img src="../assets/seenitlogo.png" alt="Logo" class="logo" />
+          </a>
+        </figure>
+      </div>
 
-<body>
-     <header class="site-header">
-        <div class="nav-container">
-            <img src="/pages/assets/seenitlogo.png" alt="Logo" class="logo">
-            <nav class="nav-boxes">
-                <button class="nav-item">Browse</button>
-                <button class="nav-item">Members</button>
-                <button class="nav-item">Search</button>
+      <!-- navigation bars at the top -->
+      <nav class="nav-boxes">
+        <a href="../html/user-profile.html">
+          <button class="nav-item">My Profile</button>
+        </a>
+        <a href="../html/members-review.html">
+          <button class="nav-item">Members</button>
+        </a>
+        <a href="../html/search.html">
+          <button class="nav-item">Search</button>
+        </a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </header>
 
-             </nav>
-         </div>
- </header>
 
 
 <div class="section-divider">
