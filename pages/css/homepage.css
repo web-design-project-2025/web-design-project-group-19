@@ -28,7 +28,7 @@ height: 50px;
   min-height: 380px;
 }
 
-.hero-image img {
+.hero-video {
   width: 100%;
   height: 1200px;
   object-fit: cover;
@@ -326,7 +326,7 @@ section.browse {
     font-size:1.2rem;
 }
 
-.genre-items 
+.genre-items {
     flex-wrap: nowrap; 
     overflow-x: scroll;
     gap: 0.5rem;
