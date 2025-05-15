@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Centered box</title>
+    <title>Login/Signup - SeenIt</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
       rel="stylesheet"
@@ -13,14 +13,9 @@
   </head>
   <body>
     <header class="site-header">
-    <div class="logo-container">
-        <figure>
-          <a href="/pages/html/index.html">
-            <img src="../assets/seenitlogo.png" alt="Logo" class="logo" />
-          </a>
-        </figure>
+      <div class="logo-container">
+        <img src="../assets/seenitlogo.png" alt="Logo" class="logo" />
       </div>
-
       <nav class="nav-boxes">
         <button class="nav-item">My Profile</button>
         <button class="nav-item">Browse</button>
@@ -35,54 +30,89 @@
           <h2>Log in:</h2>
 
           <div class="login-img">
-            <img
-              src="../assets/login-img/facebook.png"
-              alt="facebook logo"
-              class="facebook"
-            />
-
-            <img
-              src="../assets/login-img/google.png"
-              alt="google logo"
-              class="google"
-            />
-
-            <img
-              src="../assets/login-img/twitter.jpg"
-              alt="twitter logo"
-              class="twitter"
-            />
-
-            <img
-              src="../assets/login-img/apple.jpg"
-              alt="apple logo"
-              class="apple"
-            />
+            <button id="googleLogin" class="auth-provider">
+              <img src="../assets/login-img/google.png" alt="google logo" />
+            </button>
           </div>
+
+          <div class="divider">
+            <span class="divider-text">OR</span>
+          </div>
+
           <div class="signup-box">
-            <h2>Or make an account, it's free:</h2>
+            <h2>Sign up with email:</h2>
 
-            <input
-              type="text"
-              class="text-name"
-              placeholder="First and last name"
-            />
-            <input
-              type="text"
-              class="text-email"
-              placeholder="Your email adress"
-            />
-            <input
-              type="text"
-              class="text-password"
-              placeholder="Create a password"
-            />
+            <div id="authMessage" class="auth-message"></div>
 
-            <button class="sign-up">Sign up</button>
+            <form id="signupForm">
+              <input
+                type="text"
+                id="displayName"
+                class="text-name"
+                placeholder="First and last name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                class="text-email"
+                placeholder="Your email address"
+                required
+              />
+              <input
+                type="password"
+                id="password"
+                class="text-password"
+                placeholder="Create a password (min 6 characters)"
+                minlength="6"
+                required
+              />
+              <button type="submit" class="sign-up">Sign up</button>
+            </form>
+
+            <p class="login-link">
+              Already have an account? <a href="#" id="showLogin">Log in</a>
+            </p>
+          </div>
+
+          <div class="login-box" style="display: none">
+            <h2>Log in with email:</h2>
+
+            <div id="loginMessage" class="auth-message"></div>
+
+            <form id="loginForm">
+              <input
+                type="email"
+                id="loginEmail"
+                class="text-email"
+                placeholder="Your email address"
+                required
+              />
+              <input
+                type="password"
+                id="loginPassword"
+                class="text-password"
+                placeholder="Your password"
+                required
+              />
+              <button type="submit" class="sign-up">Log in</button>
+            </form>
+
+            <p class="login-link">
+              Don't have an account? <a href="#" id="showSignup">Sign up</a>
+            </p>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="../js/firebase-config.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
           <footer>
       <section class="footer">
 <div class="footer-container">
