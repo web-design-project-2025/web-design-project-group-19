@@ -50,7 +50,7 @@ if (signupForm) {
         });
       })
       .then(() => {
-        window.location.href = "./pages/html//pages/html/user-profile.html";
+        window.location.href = "/pages/html/user-profile.html";
       })
       .catch((err) => {
         authMessage.textContent = err.message;
@@ -68,7 +68,7 @@ if (loginForm) {
     auth
       .signInWithEmailAndPassword(email, password)
       .then(() => {
-        window.location.href = "./pages/html//pages/html/user-profile.html";
+        window.location.href = "/pages/html/user-profile.html";
       })
       .catch((err) => {
         loginMessage.textContent = err.message;
@@ -100,7 +100,7 @@ if (googleLogin) {
         }
       })
       .then(() => {
-        window.location.href = "html//pages/html/user-profile.html";
+        window.location.href = "/pages/html/user-profile.html";
       })
       .catch((err) => {
         authMessage.textContent = err.message;
@@ -111,6 +111,6 @@ if (googleLogin) {
 // Auto-Redirect if already logged in
 auth.onAuthStateChanged((user) => {
   if (user && window.location.pathname.includes("login-sign-up")) {
-    window.location.href = "./pages/html//pages/html/user-profile.html";
+    window.location.href = "/pages/html/user-profile.html";
   }
 });
