@@ -1,20 +1,3 @@
-body {
-  overflow-x: hidden;
-}
-
-.kermit {
-  width: 100px;
-  margin-top: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.film-img {
-  width: 150px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
 /*container for films images*/
 .favorite-films-container,
 .recent-films-container,
@@ -48,7 +31,6 @@ body {
   width: 50%;
 }
 
-/*container with Username and information*/
 .profile-container {
   display: flex;
   justify-content: center;
@@ -96,4 +78,57 @@ body {
 .film-img:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 10px #ffe4c4;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #500101;
+}
+
+.edit-bio {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.edit-bio textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #500101;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.edit-bio-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-bio-btns button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-bio {
+  background-color: #500101;
+  color: white;
+}
+
+.cancel-bio {
+  background-color: #ccc;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
 }

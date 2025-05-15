@@ -15,11 +15,10 @@ body {
   align-items: center;
 }
 
-/* faded rectangle box */
 .logo-box {
   height: 90%;
   width: 95%;
-  background-color: #4c102b;
+  background-color: #500101;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -44,11 +43,11 @@ body {
   border-radius: 50%;
 }
 
-/* sign up box below logo box */
+/* sign up box */
 .signup-box {
   height: 30%;
   width: 60%;
-  background-color: #3f0028;
+  background-color: #300505;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -59,7 +58,7 @@ body {
 
 .text-name {
   font-size: 20px;
-  color: #3f0028;
+  color: #500101;
   margin-top: 10px;
   margin-bottom: 15px;
   background-color: #fffbdd;
@@ -84,7 +83,6 @@ body {
   border-radius: 3px;
 }
 
-/* trim the white space of photo */
 .google {
   height: 60px;
   width: auto;
@@ -124,4 +122,4 @@ h2 {
   .login-img img {
     width: 60px;
   }
-}
+} 
