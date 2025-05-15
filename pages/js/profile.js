@@ -14,7 +14,7 @@ logoutBtn.addEventListener("click", () => {
   auth
     .signOut()
     .then(() => {
-      window.location.href = "../pages/html/login-signup-page.html";
+      window.location.href = "/pages/html/login-signup-page.html.html";
     })
     .catch((err) => {
       console.error("Logout error:", err);
@@ -25,7 +25,7 @@ logoutBtn.addEventListener("click", () => {
 auth.onAuthStateChanged((user) => {
   if (!user) {
     // No user logged in, redirect to login page
-    window.location.href = "../pages/html/login-signup-page.html";
+    window.location.href = "/pages/html/login-signup-page.html";
   } else {
     // User is logged in, load profile data
     loadUserProfile(user.uid);
