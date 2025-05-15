@@ -1,4 +1,4 @@
-/*Basica*/
+/* Basics */
 body {
     font-family: "Montserrat", "Playfair Display", Arial, sans-serif;
     background-color: #3f0028;
@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+ /* Article Section */
 .article-main {
     max-width: 1100px;
     margin: 2.5rem auto 2rem auto;
@@ -77,9 +78,6 @@ body {
     letter-spacing: 0.01em;
 }
 
-
-
-
 .article-content h2 {
     font-family: "Playfair Display", serif;
     font-weight: 400;
@@ -94,5 +92,38 @@ body {
 .article-citation {
     font-family: "Playfair Display", serif;
     font-style: italic;
-    
+    color: #e39a1f;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #e39a1f;
+    padding-left: 1rem;
+    break-inside: avoid-column;
+    font-weight: 300;
+}
+
+
+.citation-author {
+    display: block;
+    font-size: 1rem;
+    color: #fffbdc;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+/* Responsive */
+@media (max-width:900px) {
+    .article-content {
+        column-count: 1;
+        font-size: 1rem;
+    }
+
+    .blog-article {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .article-title {
+        font-size: 2rem;
+    }
 }
