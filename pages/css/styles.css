@@ -1,7 +1,7 @@
 /* Basic style */
 body {
   margin: 0;
-  background-color:#300505;
+  background-color: #300505;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: #ffe4c4;
@@ -30,7 +30,6 @@ body {
   max-width: 100%;
   object-fit: contain;
   background-color: #ddae78;
-  
 }
 
 .logo-button:hover {
