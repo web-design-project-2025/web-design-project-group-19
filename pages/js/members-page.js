@@ -1,3 +1,6 @@
+// The following functions was generated with the help of GitHub Copilot and then manually reviewed and adapted for this project.
+
+
 // Select elements
 const prevButton = document.querySelector(".rotation-button-left");
 const nextButton = document.querySelector(".rotation-button-right");

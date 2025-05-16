@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.signup-box,
 .logo-box {
   height: 90%;
   width: 95%;
@@ -24,6 +24,23 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+}
+
+
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 380px;
+}
+
+.hero-video {
+  width: 140%;
+  height: 1200px;
+  object-fit: cover;
+  display: block;
 }
 
 /* product images */
@@ -43,18 +60,7 @@ body {
   border-radius: 50%;
 }
 
-/* sign up box */
-.signup-box {
-  height: 30%;
-  width: 60%;
-  background-color: #300505;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
+
 
 .text-name {
   font-size: 20px;
