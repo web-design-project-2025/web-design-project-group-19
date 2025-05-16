@@ -1,41 +1,4 @@
 
- /*Header*/
-.site-header {
-    background-color: #ddae78;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 3px solid #3f0028;
-}
-
-.nav-container {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    height: 50px;;
-}
-
-.nav-boxes .nav-item {
-    background-color: #e39a1f;
-    color: #3f0028;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.nav-boxes .nav-item:hover {
-    background-color: #3f0028;
-    color: #e39a1f;
-}
-
 /*Blog Title*/
 .section-divider { 
     margin-top: 2rem;
@@ -196,6 +159,10 @@
     color: #FFFBDD;
 }
 
+.featured-article .article {
+    padding: 0;
+    border-radius: 0;
+}
 /*Older Articles*/
 .older-articles {
     display: block;

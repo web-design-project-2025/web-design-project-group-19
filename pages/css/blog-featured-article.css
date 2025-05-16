@@ -24,6 +24,27 @@
     text-align: center;
 }
 
+/*Blog Title*/
+.section-divider { 
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.section-name {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FFFBDD;
+    text-align: left;
+    margin: 0 1rem 0.5rem 1rem;
+}
+
+.divider-line {
+    height: 2px;
+    background-color: #FFFBDD;
+    margin-left: 1rem;
+    max-width: 1350px;
+}
 
 .standfirst {
     font-family: "Montserrat", sans-serif;
