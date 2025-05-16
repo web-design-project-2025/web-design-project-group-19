@@ -201,7 +201,9 @@ section.trending {
   gap: 1rem;
   overflow-x: auto;
   padding: 0 1rem;
+   scrollbar-width: none;
 }
+
 
 .trending-items img {
   width: 180px;
@@ -268,6 +270,7 @@ section.browse {
   color: #3f0028;
   transform: scale(1.1);
   box-shadow: 0 2px 4px rgba (0,0,0,0.2);
+   
 }
 
 .arrow:active {
@@ -346,8 +349,8 @@ section.browse {
 .arrow {
     display: none;
   }
+}
+
 
 /*command to remove the white scrolling bar
  /*  ->  scrollbar-width: none; 
-
-
