@@ -103,6 +103,8 @@ height: 50px;
 a.cta-button {
   text-decoration: none;
 }
+
+
 /* Features Section */
 .features-section {
   background: #220016;
@@ -347,3 +349,5 @@ section.browse {
 
 /*command to remove the white scrolling bar
  /*  ->  scrollbar-width: none; 
+
+
