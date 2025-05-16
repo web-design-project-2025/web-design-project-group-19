@@ -137,6 +137,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   padding: 30px;
+  font: caption;
 }
 
 .film-img {

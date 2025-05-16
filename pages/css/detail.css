@@ -9,7 +9,7 @@
 }
 
 .header {
-  background-color:#300505;
+  background-color: #300505;
   color: #ffe4c4;
   padding: 20px 0;
   margin-bottom: 30px;
@@ -85,6 +85,7 @@
 .media-overview {
   line-height: 1.7;
   margin-bottom: 20px;
+  font: caption;
 }
 
 /* Cast Grid*/

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid #3f0028;
+    border-bottom: 3px solid #3f0028
 }
 
 .nav-container {
@@ -170,7 +170,7 @@ a.cta-button {
 
 .feature-card p {
   font-size: 1rem;
-  color: #f3e7d8; 
+  color: #f3e7d8;
   margin: 0;
 }
 
@@ -275,7 +275,7 @@ section.browse {
 
 .arrow:active {
   transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2)
 
 }
 
@@ -352,5 +352,3 @@ section.browse {
 }
 
 
-/*command to remove the white scrolling bar
- /*  ->  scrollbar-width: none; 
