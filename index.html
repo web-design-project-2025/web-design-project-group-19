@@ -127,7 +127,14 @@
       </section>
   </footer>
  
-
+    <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-boxes");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
 
  <script type="module" src="./pages/js/homepage.js"></script>
 
