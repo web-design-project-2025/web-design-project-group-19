@@ -26,6 +26,23 @@ body {
   margin-top: 30px;
 }
 
+
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 380px;
+}
+
+.hero-video {
+  width: 140%;
+  height: 1200px;
+  object-fit: cover;
+  display: block;
+}
+
 /* product images */
 .login-img {
   display: flex;
