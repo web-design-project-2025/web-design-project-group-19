@@ -44,7 +44,7 @@ body {
 }
 
 .nav-item {
-  background-color: #300505;
+  background: none;
   color: #ffe4c4;
   border: none;
   padding: 0.7rem 1.2rem;
@@ -52,6 +52,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
+  text-decoration: none;
 }
 
 .footer-content {
