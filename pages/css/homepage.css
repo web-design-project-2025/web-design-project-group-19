@@ -1,24 +1,4 @@
-/*Basics*/
-.site-header {
-    background-color: #ddae78;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 3px solid #3f0028
-}
 
-.nav-container {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-height: 50px;
-}
 
 /* Hero Section*/
 .hero {
