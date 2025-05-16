@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid #3f0028
+    border-bottom: 3px solid #3f0028;
 }
 
 .nav-container {
@@ -99,6 +99,10 @@ height: 50px;
   transform: scale(1.07);
 }
 
+
+a.cta-button {
+  text-decoration: none;
+}
 /* Features Section */
 .features-section {
   background: #220016;
@@ -152,7 +156,7 @@ height: 50px;
 
 .feature-card:hover .feature-icon {
   color: ffe4c4;
-  text-shadow: 0 0 12px #e39a1f, 0 0 4px #fff;
+  text-shadow: 0 0 12px # 0 0 4px #fff;
 }
 
 .feature-card h4 {
@@ -164,7 +168,7 @@ height: 50px;
 
 .feature-card p {
   font-size: 1rem;
-  color: #f3e7d8;
+  color: #f3e7d8; 
   margin: 0;
 }
 
@@ -266,7 +270,7 @@ section.browse {
 
 .arrow:active {
   transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 
 }
 
