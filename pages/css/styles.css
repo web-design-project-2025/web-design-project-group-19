@@ -29,7 +29,7 @@ body {
   height: 40px;
   max-width: 100%;
   object-fit: contain;
-  background-color: #500101;
+  background:none;;
 }
 
 .logo-button:hover {
