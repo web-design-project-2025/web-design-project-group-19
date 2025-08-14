@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="./pages/css/styles.css" />  
+    <link rel="stylesheet" href="./pages/css/homepage.css" />
+</head>
+
+
+ <body>
+    <header class="site-header">
+      <div class="logo-container">
+        <figure>
+          <a href="./index.html">
+            <img src="pages/assets/logo.png" alt="Logo" class="logo" />
+          </a>
+        </figure>
+      </div>
+
+      <!-- navigation bars at the top -->
+     <nav class="nav-boxes">
+  <a class="nav-item" href="./pages/html/user-profile.html">My Profile</a>
+  <a class="nav-item" href="./pages/html/members-review.html">Members</a>
+  <a class="nav-item" href="./pages/html/blog-overview.html">Blog</a>
+  <a class="nav-item" href="./pages/html/search.html">Search</a>
+</nav>
+      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+
+<main class="main-content">
+        <!--hero section-->
+        <section class="hero">
+            <div class="hero-image">
+                <video src="./pages/assets/video/7989632-uhd-2160-4096-25fps_czoLhxTn.mp4" autoplay loop muted playsinline class="hero-video"></video>
+            </div>
+            <div class="hero-text">
+                <h2>Watched it. Rated it. Revisited it.</h2>
+                <h3>Keep track of your movie life.</h3>
+                <h4>Hype the good stuff with your crew.</h4>
+                <a href="./pages/html/login-signup-page.html" class="cta-button">SIGN UP / REGISTER</a>
+            </div>
+        </section>
+
+        <!--Feature section here-->
+        <section class="features-section">
+            <div class="features-grid"> 
+                <div class="feature-card">
+                    <span class="feature-icon">⭐</span>
+                    <p>Rate and review your favorites</p>
+                </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔍</span>
+                <p>Browse and search for new titles</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📝</span>
+                <p>Write reviews and share it with friends</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📋</span>
+                <p>Create watchlists and custom lists</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">👥</span>
+                <p>Connect and follow other movie fans</p>
+            </div>
+        </div>
+    </section>
+
+        <!---Trending Movies-->
+        <section class="trending">
+            <h3>Trending Movies</h3>
+            <div class="trending-items" id="trending-movies">
+                <!--- Movies will be dynamically loaded here -->
+            </div>
+                <button class="arrow" aria-label="Scroll Left">&#8249;</button>
+                <button class="arrow" aria-label="Scroll Right">&#8250;</button>
+        </section>
+        <!----Trending Shows-->
+        <section class="trending">
+            <h3>Trending Shows</h3>
+            <div class="trending-items" id="trending-shows">
+                <!---- Shows will be dynamically loaded here -->
+            </div>
+                <button class="arrow" aria-label="Scroll Left">&#8249;</button>
+                <button class="arrow" aria-label="Scroll Right">&#8250;</button>
+        </section>
+      
+      <footer>
+      <section class="footer">
+<div class="footer-container">
+        <div class="footer-logo">
+          <img src="pages/assets/logo.png" alt="Logo" class="footer-logo-img" />
+        </div>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="./pages/html/blog-overview.html">Blog</a>
+          <a href="#">Terms </a>
+        </div>
+<div class="social-media-icons">
+  
+  <a href="#">
+    <img src="./pages/assets/instagram-new.png" alt="social-media" class="social-media" />
+  </a>
+  <a href="#">
+    <img src="./pages/assets/facebook-new.png" alt="social-media" class="social-media" />
+  </a>
+  <a href="#">
+    <img src="./pages/assets/tiktok.png" alt="social-media" class="social-media" />
+  </a>
+  <a href="#">
+    <img src="./pages/assets/yt.png" alt="social-media" class="social-media" />
+  </a>
+</div>
+
+        </div>
+      <div class="footer-content">
+        <p>&copy; 2025 SeenIt?. Made by students in Sweden. Film data from <a href="https://www.themoviedb.org/">TMDB</a>. All rights reserved.</p>
+      </div>
+      </section>
+  </footer>
+ 
+    <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-boxes");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+ <script type="module" src="./pages/js/homepage.js"></script>
+
+ </body>
+ </html>
