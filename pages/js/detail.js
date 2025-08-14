@@ -230,7 +230,7 @@ function showError(message) {
   elements.container.innerHTML = `
         <div class="error-message">
             <p>${message}</p>
-            <a href="index.html" class="back-button">← Back to Search</a>
+            <a href="/web-design-project-group-19/index.html" class="back-button">← Back to Search</a>
         </div>
     `;
   elements.container.classList.remove("hidden");
