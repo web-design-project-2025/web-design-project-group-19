@@ -14,7 +14,7 @@ logoutBtn.addEventListener("click", () => {
   auth
     .signOut()
     .then(() => {
-      window.location.href = "/pages/html/login-signup-page.html";
+      window.location.href = "/web-design-project-group-19/pages/html/login-signup-page.html";
     })
     .catch((err) => {
       console.error("Logout error:", err);
@@ -25,7 +25,7 @@ logoutBtn.addEventListener("click", () => {
 auth.onAuthStateChanged((user) => {
   if (!user) {
     // No user logged in, redirect to login page
-    window.location.href = "/pages/html/login-signup-page.html";
+    window.location.href = "/web-design-project-group-19/pages/html/login-signup-page.html";
   } else {
     // User is logged in, load profile data
     loadUserProfile(user.uid);
@@ -52,7 +52,7 @@ function loadUserProfile(userId) {
         if (userData.profileImage && userData.profileImage !== "default") {
           profilePicture.src = userData.profileImage;
         } else {
-          profilePicture.src = "../assets/profile-img/ponyo.jpg";
+          profilePicture.src = "/web-design-project-group-19/web-design-project-group-19/pages/assets/profile-img/ponyo.jpg";
         }
 
         // Format join date
