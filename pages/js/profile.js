@@ -52,7 +52,7 @@ function loadUserProfile(userId) {
         if (userData.profileImage && userData.profileImage !== "default") {
           profilePicture.src = userData.profileImage;
         } else {
-          profilePicture.src = "/web-design-project-group-19/web-design-project-group-19/pages/assets/profile-img/ponyo.jpg";
+          profilePicture.src = "/web-design-project-group-19/pages/assets/profile-img/ponyo.jpg";
         }
 
         // Format join date
