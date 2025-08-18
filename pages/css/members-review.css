@@ -29,7 +29,6 @@ body {
   height: auto;
   text-align: center;
   overflow: hidden;
-
 }
 
 .profile-card img {
@@ -39,16 +38,14 @@ body {
   border-radius: 50%;
 }
 
-.popular-usernames , .popular-usernames-kermit {
+.popular-usernames,
+.popular-usernames-kermit {
   font-size: 12px;
   padding: 10px;
- margin-top: 10px;
+  margin-top: 10px;
   text-align: center;
-color: white;
+  color: white;
 }
-
-
-
 
 .profile-card-active {
   opacity: 1;
@@ -56,7 +53,7 @@ color: white;
   z-index: 2;
 }
 
-.arrow  {
+.arrow {
   background-image: linear-gradient(135deg, #e39a1f, #ddae78); /* fixed */
   color: #3f0028;
   border: none;
@@ -118,7 +115,6 @@ color: white;
 .featured-container figure {
   text-align: center;
   margin: 0;
-  
 }
 
 .featured-username {
@@ -146,7 +142,6 @@ color: white;
   gap: 10px;
   padding-top: 60px;
   padding-bottom: 10px;
- 
 }
 
 .profile-review-img {
@@ -161,7 +156,7 @@ color: white;
   align-items: center;
   margin-bottom: 50px;
   font-size: 15px;
-  margin:0;
+  margin: 0;
 }
 
 .movie-review {
@@ -213,13 +208,16 @@ color: white;
 
 @media screen and (max-width: 768px) {
   .popular-members-wheel {
-    flex-wrap: wrap;
     gap: 10px;
+    overflow-x: auto;
+    white-space: normal;
+    width: 100%;
+    flex-wrap: nowrap;
   }
 
-  .profile-card {
-    width: 100px;
-    height: 100px;
+  .popular-members-container {
+    margin-left: 20px;
+    margin-left: 20px;
   }
 
   .profile-card figcaption {
