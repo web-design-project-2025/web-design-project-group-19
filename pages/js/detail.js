@@ -156,7 +156,7 @@ function renderMediaDetails(details, credits) {
                   "profile"
                 )}" 
                      alt="${person.name}" 
-                     onerror="this.src='https://via.placeholder.com/185x278?text=No+Image'">
+                     onerror="this.src='/web-design-project-group-19/pages/assets/noimage.png'"
                 <div class="cast-info">
                     <p class="cast-name">${person.name}</p>
                     <p class="cast-character">${person.character || "N/A"}</p>
