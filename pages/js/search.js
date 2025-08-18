@@ -31,30 +31,29 @@ async function loadGenres() {
   try {
     const movieGenres = await Genres.getMovieList();
     const tvGenres = await Genres.getTVList();
-    
+
     genresList = [
       ...movieGenres.genres,
-      ...tvGenres.genres.filter(tvGenre => 
-        !movieGenres.genres.some(movieGenre => movieGenre.id === tvGenre.id)
-      )
+      ...tvGenres.genres.filter(
+        (tvGenre) =>
+          !movieGenres.genres.some((movieGenre) => movieGenre.id === tvGenre.id)
+      ),
     ];
-    
+
     // Populate genre dropdown
     genreDropdown.innerHTML = '<option value="">All Genres</option>';
-    genresList.forEach(genre => {
-      const option = document.createElement('option');
+    genresList.forEach((genre) => {
+      const option = document.createElement("option");
       option.value = genre.id;
       option.textContent = genre.name;
       genreDropdown.appendChild(option);
     });
-    
   } catch (error) {
     console.error("Error loading genres:", error);
   }
 }
 
 function setupEventListeners() {
-
   // Search functionality
   searchButton.addEventListener("click", performSearch);
   searchInput.addEventListener("keypress", (e) => {
@@ -103,7 +102,7 @@ async function performSearch() {
   currentQuery = searchInput.value.trim();
   currentGenre = null; // Reset genre filter when performing a new search
   genreDropdown.value = "";
-  
+
   if (!currentQuery) {
     loadDefaultContent();
     return;
@@ -139,12 +138,14 @@ async function updateResults() {
         switch (currentSearchType) {
           case "movie":
             response = await Genres.getMoviesByGenre(currentGenre, currentPage);
-            const movieGenreName = genresList.find(g => g.id === currentGenre)?.name || 'Selected';
+            const movieGenreName =
+              genresList.find((g) => g.id === currentGenre)?.name || "Selected";
             resultsTitle.textContent = `${movieGenreName} Movies`;
             break;
           case "tv":
             response = await Genres.getTVByGenre(currentGenre, currentPage);
-            const tvGenreName = genresList.find(g => g.id === currentGenre)?.name || 'Selected';
+            const tvGenreName =
+              genresList.find((g) => g.id === currentGenre)?.name || "Selected";
             resultsTitle.textContent = `${tvGenreName} TV Shows`;
             break;
           case "person":
@@ -177,7 +178,8 @@ async function updateResults() {
     displayResults(response.results);
   } catch (error) {
     console.error("Error fetching results:", error);
-    resultsContainer.innerHTML = "<p>Error loading results. Please try again.</p>";
+    resultsContainer.innerHTML =
+      "<p>Error loading results. Please try again.</p>";
   }
 }
 
@@ -222,9 +224,10 @@ function displayResults(results) {
       metaInfo = item.release_date ? item.release_date.substring(0, 4) : "N/A";
       // Add genre names if available
       if (item.genre_ids && item.genre_ids.length > 0) {
-        const genreNames = item.genre_ids.map(id => 
-          genresList.find(g => g.id === id)?.name
-        ).filter(Boolean).join(', ');
+        const genreNames = item.genre_ids
+          .map((id) => genresList.find((g) => g.id === id)?.name)
+          .filter(Boolean)
+          .join(", ");
         if (genreNames) {
           metaInfo += ` • ${genreNames}`;
         }
@@ -237,9 +240,10 @@ function displayResults(results) {
         : "N/A";
       // Add genre names if available
       if (item.genre_ids && item.genre_ids.length > 0) {
-        const genreNames = item.genre_ids.map(id => 
-          genresList.find(g => g.id === id)?.name
-        ).filter(Boolean).join(', ');
+        const genreNames = item.genre_ids
+          .map((id) => genresList.find((g) => g.id === id)?.name)
+          .filter(Boolean)
+          .join(", ");
         if (genreNames) {
           metaInfo += ` • ${genreNames}`;
         }
@@ -250,9 +254,10 @@ function displayResults(results) {
       metaInfo = item.known_for_department || "N/A";
       // For people, show what they're known for
       if (item.known_for && item.known_for.length > 0) {
-        const knownFor = item.known_for.map(work => 
-          work.title || work.name
-        ).filter(Boolean).join(', ');
+        const knownFor = item.known_for
+          .map((work) => work.title || work.name)
+          .filter(Boolean)
+          .join(", ");
         if (knownFor) {
           metaInfo += ` • Known for: ${knownFor}`;
         }
@@ -265,7 +270,10 @@ function displayResults(results) {
           "medium",
           currentSearchType === "person" ? "profile" : "poster"
         )
-      : "to fix!";
+      : currentSearchType === "person"
+      ? "/web-design-project-group-19/pages/assets/noimage.png"
+      : "/web-design-project-group-19/pages/assets/nomedia.png";
+    // The nomedia.png was generated with Sora by OpenAI on 18:08:2025 - Prompt: create a simple image with a cream neutral background and a carmine red movie icon
 
     card.innerHTML = `
       <img src="${posterUrl}" alt="${title}" class="result-poster">
