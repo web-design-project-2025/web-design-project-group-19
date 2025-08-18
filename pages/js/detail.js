@@ -199,7 +199,7 @@ function renderPersonDetails(details, credits) {
                           "poster"
                         )}" 
                              alt="${title}"
-                             onerror="this.src='to-fix'">
+                             onerror="this.src='/web-design-project-group-19/pages/assets/nomedia.png'">
                         <p class="known-for-title">${title}</p>
                         <p class="known-for-character">${
                           item.character || ""
