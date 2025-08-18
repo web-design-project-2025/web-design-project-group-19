@@ -146,6 +146,7 @@ function renderMediaDetails(details, credits) {
     sectionTitle.textContent = "Cast";
     elements.container.appendChild(sectionTitle);
 
+    // The noimage.png was generated with Sora by OpenAI on 18:08:2025 - Prompt: create a simple image with a cream neutral background and a carmine red user icon
     elements.castGrid.innerHTML = credits.cast
       .map(
         (person) => `
@@ -156,7 +157,7 @@ function renderMediaDetails(details, credits) {
                   "profile"
                 )}" 
                      alt="${person.name}" 
-                     onerror="this.src='/web-design-project-group-19/pages/assets/noimage.png'"
+                     onerror="this.src='/web-design-project-group-19/pages/assets/noimage.png'"  
                 <div class="cast-info">
                     <p class="cast-name">${person.name}</p>
                     <p class="cast-character">${person.character || "N/A"}</p>
